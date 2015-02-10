@@ -20,12 +20,28 @@ class BingQuery(object):
     def compute_precision(self):
         """Compute the precision of this query.
 
-        Must be run after execute()
+        Must be run after results are populated (e.g. from a call to execute()).
 
         Returns:
           A float containing the precision of the query.
         """
-        pass
+        return float(sum(x.is_relevant for x in self.results))/len(self.results)
+
+    @classmethod
+    def build_from_json(cls, fname):
+        """Construct an instance of the class using query results from a JSON file.
+
+        Args:
+          fname: the name of a JSON file with the Bing results to use for testing.
+        Returns:
+          An instance of BingQuery with results initialized.
+        """
+        obj = cls()
+        with open(fname) as f:
+            data = json.load(f)
+            for result in data['d']['results']:
+                obj.results.append(BingResult.build_from_json(result))
+        return obj
 
 
 class BingResult(object):
@@ -35,6 +51,9 @@ class BingResult(object):
         self.title = title
         self.description = description
         self.url = url
+
+        # Was this result marked as relevant by the user?
+        self.is_relevant = False
 
     def get_page_contents(self):
         """Get the contents of the result HTML webpage.
@@ -47,17 +66,16 @@ class BingResult(object):
         return parsing.extract_page_text(response.read())
 
     @classmethod
-    def build_from_json(cls, json_str):
+    def build_from_json(cls, json_obj):
         """Constructs an object of this type from a single Bing result.
 
         Args:
-          json_str: A JSON string representing an item in the 'results' list from a
-            'Bing' response.
+          json_obj: A JSON structure representing an item in the 'results' list
+            from a 'Bing' response, i.e. nested lists and dictionaries.
 
         Returns:
           A BingResult object.
         """
-        json_obj = json.loads(json_str)
         return cls(title=json_obj['Title'],
                    description=json_obj['Description'],
                    url=json_obj['Url'])
