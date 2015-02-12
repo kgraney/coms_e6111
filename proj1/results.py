@@ -1,5 +1,6 @@
 """Classes that handle interaction with Bing."""
 import json
+import textwrap
 import urllib2
 
 import parsing
@@ -64,6 +65,10 @@ class BingResult(object):
         request = urllib2.Request(self.url)
         response = urllib2.urlopen(request)
         return parsing.extract_page_text(response.read())
+
+    def to_formatted_string(self):
+        return '%s\n%s\n\n%s' % (self.title, self.url,
+                textwrap.fill(self.description))
 
     @classmethod
     def build_from_json(cls, json_obj):
