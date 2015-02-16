@@ -24,3 +24,6 @@ def extract_page_text(html):
 
     return text
 
+def tokenize_text(text):
+    # TODO(kevin): consider more intelligent term lexing here
+    return [x.lower() for x in text.split()]

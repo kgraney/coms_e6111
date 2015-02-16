@@ -53,6 +53,11 @@ class TestBingResult(unittest.TestCase):
                                         url=url("/"))
             self.assertEqual("blah clah dlah", result.get_page_contents())
 
+    def test_get_vector(self):
+        result = results.BingResult.build_from_json(json.loads(SAMPLE_RESULT))
+        print result.get_vector()
+
+
 class TestBingQuery(unittest.TestCase):
     def test_compute_precision(self):
         query = results.BingQuery.build_from_json(SAMPLE_RESULTS_FILE)

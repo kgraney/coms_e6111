@@ -4,6 +4,7 @@ import textwrap
 import urllib2
 
 import parsing
+import vector_model
 
 
 class BingQuery(object):
@@ -68,7 +69,18 @@ class BingResult(object):
 
     def to_formatted_string(self):
         return '%s\n%s\n\n%s' % (self.title, self.url,
-                textwrap.fill(self.description))
+                                 textwrap.fill(self.description))
+
+    def get_vector(self):
+        target_page_vec = vector_model.Vector.build_from_text(
+            self.get_page_contents())
+        description_vec = vector_model.Vector.build_from_text(
+            self.description)
+
+        # Weight the description vector higher than the actual page (we assume
+        # Bing provides high-quality descriptions).
+        vec = 2*description_vec + target_page_vec
+        return vec
 
     @classmethod
     def build_from_json(cls, json_obj):
