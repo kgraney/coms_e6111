@@ -33,7 +33,7 @@ def ask_user_for_relevance(query_results):
             user_in = raw_input(prompt_text).strip().lower()
             if user_in == 'y' or user_in == 'n':
                 break
-        if input == 'y':
+        if user_in == 'y':
             result.is_relevant = True
 
 
@@ -46,12 +46,15 @@ def query_expansion_loop(query_terms, target_precision):
     """
     logger.info('Target Precision: %f', target_precision)
     precision = 0
+    # TODO(kevin): construct from query terms instead of static JSON
+    #query = results.BingQuery(query_terms)
+
+    query = results.BingQuery.build_from_json(os.path.join(os.path.dirname(
+        os.path.realpath(__file__)), 'sample_data', 'sample_output.json'))
+    query.query_terms = query_terms
     while True:
-        logger.info('Querying: %s', query_terms)
-        # TODO(kevin): construct from query terms instead of static JSON
-        #query = results.BingQuery(query_terms)
-        query = results.BingQuery.build_from_json(os.path.join(os.path.dirname(
-            os.path.realpath(__file__)), 'sample_data', 'sample_output.json'))
+        logger.info('Querying: %s', query.query_terms)
+        query.execute()
         ask_user_for_relevance(query.results)
         precision = query.compute_precision()
         logger.info('Precision: target=%f actual=%f', target_precision, precision)
@@ -64,6 +67,7 @@ def query_expansion_loop(query_terms, target_precision):
             break
 
         # TODO: add one or two more words to the query
+        query = query.next_query()
 
 def main():
     logging.basicConfig(level=logging.INFO)

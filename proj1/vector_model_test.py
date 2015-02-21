@@ -4,9 +4,11 @@ import unittest
 
 class TestVector(unittest.TestCase):
 
-    def test_rmul(self):
+    def test_mul(self):
         v1 = vector_model.Vector({'a': 1, 'b': 2, 'c': 0, 'd': 0.4})
         v2 = 2*v1
+        v3 = vector_model.Vector({'a': 9, 'e': 5, 'c': 0, 'd': 0.4})
+        v4 = v1*v3
         self.assertEqual(1, v1.get_weight('a'))
         self.assertEqual(2, v1.get_weight('b'))
         self.assertEqual(0, v1.get_weight('c'))
@@ -15,6 +17,12 @@ class TestVector(unittest.TestCase):
         self.assertEqual(4, v2.get_weight('b'))
         self.assertEqual(0, v2.get_weight('c'))
         self.assertEqual(0.8, v2.get_weight('d'))
+
+        self.assertEqual(9, v4.get_weight('a'))
+        self.assertEqual(0, v4.get_weight('b'))
+        self.assertEqual(0, v4.get_weight('c'))
+        self.assertAlmostEqual(0.16, v4.get_weight('d'), places=8)
+        self.assertEqual(0, v4.get_weight('e'))
 
     def test_add(self):
         v1 = vector_model.Vector({'a': 1, 'b': 2, 'c': 0, 'd': 0.4})

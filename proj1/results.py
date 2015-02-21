@@ -1,4 +1,5 @@
 """Classes that handle interaction with Bing."""
+import heapq
 import json
 import textwrap
 import urllib2
@@ -10,7 +11,9 @@ import vector_model
 class BingQuery(object):
     """Represents a Bing query."""
 
-    def __init__(self):
+    def __init__(self, query_terms=()):
+        self.query_terms = list(query_terms)
+
         # A list of ordered BingResult objects representing the result documents for
         # this query.
         self.results = []
@@ -28,6 +31,35 @@ class BingQuery(object):
           A float containing the precision of the query.
         """
         return float(sum(x.is_relevant for x in self.results))/len(self.results)
+
+    def get_query_vector(self):
+        return vector_model.Vector.build_from_iterable(self.query_terms)
+
+    def next_query(self):
+        """
+        Assumptions:
+          - there is at least one relevant result
+
+        Returns:
+          a BingQuery object
+        """
+        query_vector = self.get_query_vector()
+
+        avg_relevant_result = vector_model.Vector()
+        relevant_results = [x for x in self.results if x.is_relevant]
+        for relevant_result in relevant_results:
+            # TODO: ensure this removes query terms (i.e. the weight subtracted is max)
+            avg_relevant_result += (relevant_result.get_vector() - 1000*query_vector)
+        avg_relevant_result = 1.0/len(relevant_results) * avg_relevant_result
+
+        new_query = sorted(
+                heapq.nlargest(2, avg_relevant_result.term_weights.iteritems(),
+                               key=lambda x: x[1]) +
+                query_vector.term_weights.items(),
+                key=lambda x: x[1],
+                reverse=True)
+
+        return type(self)(x[0] for x in new_query)
 
     @classmethod
     def build_from_json(cls, fname):
