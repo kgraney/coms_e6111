@@ -37,7 +37,7 @@ def ask_user_for_relevance(query_results):
             result.is_relevant = True
 
 
-def query_expansion_loop(query_terms, target_precision):
+def query_expansion_loop(query_terms, target_precision, api_key):
     """Run the user-interactive loop that expands the query.
 
     Args:
@@ -46,15 +46,10 @@ def query_expansion_loop(query_terms, target_precision):
     """
     logger.info('Target Precision: %f', target_precision)
     precision = 0
-    # TODO(kevin): construct from query terms instead of static JSON
-    #query = results.BingQuery(query_terms)
-
-    query = results.BingQuery.build_from_json(os.path.join(os.path.dirname(
-        os.path.realpath(__file__)), 'sample_data', 'sample_output.json'))
-    query.query_terms = query_terms
+    query = results.BingQuery(query_terms)
     while True:
         logger.info('Querying: %s', query.query_terms)
-        query.execute()
+        query.execute(api_key)
         ask_user_for_relevance(query.results)
         precision = query.compute_precision()
         logger.info('Precision: target=%f actual=%f', target_precision, precision)
@@ -72,7 +67,7 @@ def query_expansion_loop(query_terms, target_precision):
 def main():
     logging.basicConfig(level=logging.INFO)
     args = parser.parse_args()
-    query_expansion_loop(args.query.split(), args.precision)
+    query_expansion_loop(args.query.split(), args.precision, args.api_key)
 
 if __name__ == '__main__':
     main()

@@ -4,6 +4,7 @@ import json
 import textwrap
 import urllib2
 
+import bing
 import parsing
 import vector_model
 
@@ -18,9 +19,13 @@ class BingQuery(object):
         # this query.
         self.results = []
 
-    def execute(self):
+    def execute(self, api_key):
         """Execute the query on Bing."""
-        pass
+        bing_resp = bing.execute_query(' '.join(self.query_terms), api_key)
+        print bing_resp
+        data = json.loads(bing_resp)
+        for result in data['d']['results']:
+            self.results.append(BingResult.build_from_json(result))
 
     def compute_precision(self):
         """Compute the precision of this query.
