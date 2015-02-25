@@ -43,7 +43,8 @@ with the goal being to return more relevant results.  Vectors are computed for
 each of the search results returned as well as each query that is executed.
 
 ## Computing vectors
-```TODO: add how the vectors are computed (and write the code!)
+```
+TODO: add how the vectors are computed (and write the code!)
 ```
 
 All vectors are unit vectors.
