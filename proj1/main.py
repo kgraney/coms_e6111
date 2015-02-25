@@ -61,7 +61,6 @@ def query_expansion_loop(query_terms, target_precision, api_key):
             logger.info('The target precision has been obtained.')
             break
 
-        # TODO: add one or two more words to the query
         query = query.next_query()
 
 def main():

@@ -19,10 +19,13 @@ class BingQuery(object):
         # this query.
         self.results = []
 
+        # Our best estimate so far of a vector representing the direction of
+        # relevance for the query.
+        self.relevance_vector = vector_model.Vector()
+
     def execute(self, api_key):
         """Execute the query on Bing."""
         bing_resp = bing.execute_query(' '.join(self.query_terms), api_key)
-        print bing_resp
         data = json.loads(bing_resp)
         for result in data['d']['results']:
             self.results.append(BingResult.build_from_json(result))
@@ -53,18 +56,23 @@ class BingQuery(object):
         avg_relevant_result = vector_model.Vector()
         relevant_results = [x for x in self.results if x.is_relevant]
         for relevant_result in relevant_results:
-            # TODO: ensure this removes query terms (i.e. the weight subtracted is max)
-            avg_relevant_result += (relevant_result.get_vector() - 1000*query_vector)
+            # TODO: ensure this removes query terms (i.e. the weight subtracted
+            # is the max possible weight)
+            avg_relevant_result += (relevant_result.get_vector() -
+                                    1000*query_vector)
         avg_relevant_result = 1.0/len(relevant_results) * avg_relevant_result
+        relevance_vector = 0.5 * (self.relevance_vector + avg_relevant_result)
 
-        new_query = sorted(
-                heapq.nlargest(2, avg_relevant_result.term_weights.iteritems(),
+        new_query_lst = sorted(
+                heapq.nlargest(2, relevance_vector.term_weights.iteritems(),
                                key=lambda x: x[1]) +
                 query_vector.term_weights.items(),
                 key=lambda x: x[1],
                 reverse=True)
 
-        return type(self)(x[0] for x in new_query)
+        new_query = type(self)(x[0] for x in new_query_lst)
+        new_query.relevance_vector = relevance_vector
+        return new_query
 
     @classmethod
     def build_from_json(cls, fname):
