@@ -21,7 +21,7 @@ class BingQuery(object):
 
         # Our best estimate so far of a vector representing the direction of
         # relevance for the query.
-        self.relevance_vector = vector_model.Vector()
+        self.relevance_vector = vector_model.UnitVector()
 
     def execute(self, api_key):
         """Execute the query on Bing."""
@@ -41,7 +41,7 @@ class BingQuery(object):
         return float(sum(x.is_relevant for x in self.results))/len(self.results)
 
     def get_query_vector(self):
-        return vector_model.Vector.build_from_iterable(self.query_terms)
+        return vector_model.UnitVector.build_from_iterable(self.query_terms)
 
     def next_query(self):
         """
@@ -53,7 +53,7 @@ class BingQuery(object):
         """
         query_vector = self.get_query_vector()
 
-        avg_relevant_result = vector_model.Vector()
+        avg_relevant_result = vector_model.UnitVector()
         relevant_results = [x for x in self.results if x.is_relevant]
         for relevant_result in relevant_results:
             # TODO: ensure this removes query terms (i.e. the weight subtracted
@@ -117,9 +117,9 @@ class BingResult(object):
                                  textwrap.fill(self.description))
 
     def get_vector(self):
-        target_page_vec = vector_model.Vector.build_from_text(
+        target_page_vec = vector_model.UnitVector.build_from_text(
             self.get_page_contents())
-        description_vec = vector_model.Vector.build_from_text(
+        description_vec = vector_model.UnitVector.build_from_text(
             self.description)
 
         # Weight the description vector higher than the actual page (we assume

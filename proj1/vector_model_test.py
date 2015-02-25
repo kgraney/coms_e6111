@@ -43,5 +43,27 @@ class TestVector(unittest.TestCase):
         self.assertEqual(0, math.acos((v1 * v1_orig) /
                                       (v1.magnitude * v1_orig.magnitude)))
 
+
+class TestUnitVector(unittest.TestCase):
+
+    def test_vector(self):
+        v1 = vector_model.UnitVector({'a': 1, 'b': 1, 'c': 1, 'd': 1})
+        self.assertEqual(0.5, v1.get_weight('a'))
+        self.assertEqual(0.5, v1.get_weight('b'))
+        self.assertEqual(0.5, v1.get_weight('c'))
+        self.assertEqual(0.5, v1.get_weight('d'))
+        self.assertEqual(1, v1.magnitude)
+
+        v2 = vector_model.UnitVector({'a': 1})
+        self.assertEqual(1, v2.get_weight('a'))
+        self.assertEqual(1, v2.magnitude)
+
+        v3 = v1 + v2
+        self.assertEqual(1, v3.magnitude)
+        self.assertAlmostEqual(0.866, v3.get_weight('a'), places=2)
+        self.assertAlmostEqual(0.288, v3.get_weight('b'), places=2)
+        self.assertAlmostEqual(0.288, v3.get_weight('c'), places=2)
+        self.assertAlmostEqual(0.288, v3.get_weight('d'), places=2)
+
 if __name__ == '__main__':
     unittest.main(verbosity=2)

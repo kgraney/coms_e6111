@@ -1,10 +1,11 @@
 import parsing
 import math
 
+
 class Vector(object):
     """Represents a vector of weighted terms in the Vector model.
 
-    Because these vectors are very space, internally this class represents the
+    Because these vectors are very sparse, internally this class represents the
     vector as a dictionary mapping terms to their weights.
     """
 
@@ -88,3 +89,9 @@ class Vector(object):
         for x in iterable:
             terms[x] = terms.get(x, 0) + 1
         return cls(terms)
+
+
+class UnitVector(Vector):
+    def __init__(self, *args, **kwargs):
+        super(UnitVector, self).__init__(*args, **kwargs)
+        self.make_unit()
