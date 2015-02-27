@@ -1,6 +1,7 @@
 """Classes that handle interaction with Bing."""
 import heapq
 import json
+import logging
 import textwrap
 import urllib2
 
@@ -8,6 +9,7 @@ import bing
 import parsing
 import vector_model
 
+logger = logging.getLogger(__name__)
 
 class BingQuery(object):
     """Represents a Bing query."""
@@ -52,17 +54,17 @@ class BingQuery(object):
           a BingQuery object
         """
         query_vector = self.get_query_vector()
-
         avg_relevant_result = vector_model.UnitVector()
-        relevant_results = [x for x in self.results if x.is_relevant]
-        for relevant_result in relevant_results:
-            # TODO: ensure this removes query terms (i.e. the weight subtracted
-            # is the max possible weight)
-            avg_relevant_result += (relevant_result.get_vector() -
-                                    1000*query_vector)
-        avg_relevant_result = 1.0/len(relevant_results) * avg_relevant_result
-        relevance_vector = 0.5 * (self.relevance_vector + avg_relevant_result)
+        for result in self.results:
+            if result.is_relevant:
+              avg_relevant_result += result.get_vector()
+            else:
+              avg_relevant_result -= result.get_vector()
 
+        for term in query_vector.terms:
+            avg_relevant_result.zero_coordinate(term)
+
+        relevance_vector = self.relevance_vector + avg_relevant_result
         new_query_lst = sorted(
                 heapq.nlargest(2, relevance_vector.term_weights.iteritems(),
                                key=lambda x: x[1]) +
@@ -109,23 +111,27 @@ class BingResult(object):
             A string with the text contents of the URL in the result.
         """
         request = urllib2.Request(self.url)
-        response = urllib2.urlopen(request)
-        return parsing.extract_page_text(response.read())
+        try:
+            response = urllib2.urlopen(request)
+            return parsing.extract_page_text(response.read())
+        except Exception as e:
+            logger.info('Ignoring page contents for %s: %s', self.url, str(e))
+            return ''
 
     def to_formatted_string(self):
         return '%s\n%s\n\n%s' % (self.title, self.url,
                                  textwrap.fill(self.description))
 
     def get_vector(self):
-        target_page_vec = vector_model.UnitVector.build_from_text(
+        target_page_vec = vector_model.Vector.build_from_text(
             self.get_page_contents())
-        description_vec = vector_model.UnitVector.build_from_text(
+        description_vec = vector_model.Vector.build_from_text(
             self.description)
 
         # Weight the description vector higher than the actual page (we assume
         # Bing provides high-quality descriptions).
         vec = 2*description_vec + target_page_vec
-        return vec
+        return vector_model.UnitVector(vec.term_weights)
 
     @classmethod
     def build_from_json(cls, json_obj):

@@ -74,6 +74,10 @@ class Vector(object):
     def magnitude(self):
         return math.sqrt(sum(x**2 for x in self.term_weights.values()))
 
+    @property
+    def terms(self):
+        return self.term_weights.keys()
+
     def make_unit(self):
         magnitude = self.magnitude
         for key in self.term_weights:
@@ -85,13 +89,22 @@ class Vector(object):
 
     @classmethod
     def build_from_iterable(cls, iterable):
+        # Maximum tf normalization as described in the text.
         terms = {}
         for x in iterable:
             terms[x] = terms.get(x, 0) + 1
+        if len(terms) > 0:
+            max_freq = max(terms.values())
+            for x in terms:
+                terms[x] = 0.4 + (1-0.4)*terms[x]/max_freq
         return cls(terms)
 
 
 class UnitVector(Vector):
     def __init__(self, *args, **kwargs):
         super(UnitVector, self).__init__(*args, **kwargs)
+        self.make_unit()
+
+    def zero_coordinate(self, term):
+        self.term_weights[term] = 0
         self.make_unit()
