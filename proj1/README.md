@@ -43,24 +43,52 @@ with the goal being to return more relevant results.  Vectors are computed for
 each of the search results returned as well as each query that is executed.
 
 ## Computing vectors
+We use NLTK to tokenize each document that we construct a vector for.  The
+tokens are then filtered to include only strings that contain at least one word
+character and are not a stop word.  The tokenization and stop word filter
+consider only English language text, hence this program is only useful for
+modifying English queries returning English results.
+
+Each list of terms is then passed through a function that converts the token
+list into a vector of weighted terms.  The weight of each term is computed as
+the normalized term frequency as defined on page 127 of the course text
+(http://nlp.stanford.edu/IR-book/pdf/06vect.pdf).  We compute, for each term,
 ```
-TODO: add how the vectors are computed (and write the code!)
+weight = 0.4 + (1 - 0.4)*(# of occurrences of the term in the doc) /
+                         (# of occurrences of most frequent term in doc).
 ```
 
-All vectors are unit vectors.
+For a given result returned by Bing, which we represent in the `BingResult`
+object, we compute a vector that takes into account the description of the page
+returned by the Bing API as well as the contents of the page as scraped by our
+application.  We use BeautifulSoup to remove some of the unnecessary HTML
+formatting and then generate a vector for the resulting text.
+
+The aggregate vector for a `BingResult` is computed as
+```
+2 * (description vector) + (page vector)
+```
+converted to a unit vector, since we assume Bing chooses a decent description
+of the page.
+
+All vectors are converted to unit vectors before being considered for query
+modification.  This helps normalize the vectors across individual results.
 
 ## Query modification method
 Query modification works by maintaining a cumulative relevance vector for all
 results marked as relevant by the user.  For each result the user marks as
-relevant the relevance vector is updated to represent the arithmetic mean of
-the result vectors.
+relevant the relevance vector is updated by adding to it the vector for the
+relevant document.  For each result the user marks not relevant the vector for
+that document is subtracted from the cumulative relevance vector.
 
-This artithmetic mean is preserved across queries, so if the user feedback from
-both the first and second second queries result in a _precision@10_ less than
-the target the relevance vector used to produce the third query will be the
-cumulative arithmetic mean of the relevant results from both the first and
+This cumulative relevance vector is preserved across queries, so if the user
+feedback from both the first and second second queries result in a
+_precision@10_ less than the target the relevance vector used to produce the
+third query will start with the cumulative relevant vector from the first and
 second queries.  This design assumes the user maintains a consistent notion of
-relevance during an entire single execution of this program.
+relevance during an entire single execution of this program, but allows the
+cumulative relevance vector to be refined across all the queries, not just any
+individual one.
 
 # Manifest of project files
 * `bing.py`
