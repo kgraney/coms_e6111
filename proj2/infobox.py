@@ -1,6 +1,7 @@
 import abc
 import itertools
 import logging
+import math
 import textwrap
 
 import freebase
@@ -20,7 +21,7 @@ class Infobox(object):
                 properties.append(p)
 
         label_col_width = max(p.GetLabelWidth() for p in properties)
-        data_col_width = 93 - label_col_width
+        data_col_width = 123 - label_col_width
         print '+ ' + '-'*label_col_width + '---' + '-'*data_col_width + ' +'
         print entity_names
 
@@ -85,7 +86,36 @@ class InfoboxTableProperty(InfoboxProperty):
         self.table.setdefault(row, {})[column_name] = value
 
     def GetContentRows(self, width):
-        return [str(x) for x in self.table.values()]
+        column_titles = set(
+                item for sublist in (x.keys() for x in self.table.values())
+                for item in sublist)
+        cols = {}
+        for column in column_titles:
+            cols[column] = []
+            for row in self.table.values():
+                cols[column].append(row.get(column, ''))
+
+        column_widths = {}
+        for col_name in cols:
+            column_widths[col_name] = max(len(x)
+                                          for x in cols[col_name] + [col_name])
+
+        preferred_width = sum(column_widths.values()) + 3*(len(column_widths) - 1)
+        if preferred_width > width:
+            adjustment = (preferred_width - width) / len(cols)
+            for col_name in cols:
+                column_widths[col_name] -= adjustment
+
+        for col_name in cols:
+            cols[col_name] = [
+                    x[:column_widths[col_name]].ljust(column_widths[col_name])
+                    for x in cols[col_name]]
+
+        # This is safe if cols isn't modified during these operations.
+        rows = [' | '.join(x.ljust(column_widths[x]) for x in cols.keys())]
+        rows.append('-'*width)
+        rows.extend(' | '.join(x) for x in zip(*cols.values()))
+        return rows
 
 class InfoboxEntity(object):
     __metaclass__ = abc.ABCMeta
@@ -150,8 +180,19 @@ class Person(InfoboxEntity):
             '/people/deceased_person/place_of_death': 'Place of Death',
             }
 
+    TABLE_COLUMNS = {
+            '/people/sibling_relationship/sibling': 'Sibling',
+            '/people/marriage/spouse': 'Spouse',
+            '/people/marriage/location_of_ceremony': 'Location',
+            '/people/marriage/from': 'From',
+            '/people/marriage/to': 'To',
+            }
+
     def GetInterestingProperties(self):
         return self.PROPERTIES
+
+    def GetTableColumns(self):
+        return self.TABLE_COLUMNS
 
 class Author(InfoboxEntity):
     PROPERTIES = {
@@ -165,7 +206,21 @@ class Author(InfoboxEntity):
         return self.PROPERTIES
 
 class Actor(InfoboxEntity):
-    pass
+    PROPERTIES = {
+            '/film/actor/film': 'Films',
+            }
+
+    TABLE_COLUMNS = {
+            '/film/performance/character': 'Character',
+            '/film/performance/film': 'Film name',
+            }
+
+    def GetInterestingProperties(self):
+        return self.PROPERTIES
+
+    def GetTableColumns(self):
+        return self.TABLE_COLUMNS
+
 
 class BusinessPerson(InfoboxEntity):
     PROPERTIES = {
@@ -197,10 +252,22 @@ class League(InfoboxEntity):
     PROPERTIES = {
             '/type/object/name': 'Name',
             '/common/topic/description': 'Description',
+            '/sports/sports_league/sport': 'Sport',
+            '/organization/organization/slogan': 'Slogan',
+            '/common/topic/official_website': 'Official website',
+            '/sports/sports_league/championship': 'Championship',
+            '/sports/sports_league/teams': 'Teams',
+            }
+
+    TABLE_COLUMNS = {
+            '/sports/sports_league_participation/team': 'Team Name',
             }
 
     def GetInterestingProperties(self):
         return self.PROPERTIES
+
+    def GetTableColumns(self):
+        return self.TABLE_COLUMNS
 
 class SportsTeam(InfoboxEntity):
     PROPERTIES = {
@@ -213,11 +280,28 @@ class SportsTeam(InfoboxEntity):
             '/sports/sports_team/founded': 'Founded',
             '/sports/sports_team/league': 'Leagues',
             '/sports/sports_team/location': 'Locations',
-            # TODO: add coaches
+            '/sports/sports_team/coaches': 'Coaches',
+            '/sports/sports_team/roster': 'Players',
+            }
+
+    TABLE_COLUMNS = {
+            '/sports/sports_team_coach_tenure/coach': 'Name',
+            '/sports/sports_team_coach_tenure/to': 'To',
+            '/sports/sports_team_coach_tenure/from': 'From',
+            '/sports/sports_team_coach_tenure/position': 'Position',
+            '/sports/sports_team_roster/from': 'From',
+            '/sports/sports_team_roster/to': 'To',
+            '/sports/sports_team_roster/player': 'Name',
+            '/sports/sports_team_roster/position': 'Position',
+            '/sports/sports_team_roster/number': 'Number',
+            '/sports/sports_league_participation/league': 'League',
             }
 
     def GetInterestingProperties(self):
         return self.PROPERTIES
+
+    def GetTableColumns(self):
+        return self.TABLE_COLUMNS
 
 ENTITY_MAP = {
         '/people/person': Person,
