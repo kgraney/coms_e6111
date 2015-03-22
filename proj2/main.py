@@ -33,10 +33,16 @@ def do_infobox_query(api_key, query):
             query_infobox.Print()
             break
 
+def do_question_query(api_key, query):
+    logger.info('Performing question query for \"%s\"', query)
+
 def main():
     logging.basicConfig(level=logging.INFO)
     args = parser.parse_args()
-    do_infobox_query(args.api_key, args.query)
+    if args.query_type == 'infobox':
+        do_infobox_query(args.api_key, args.query)
+    elif args.query_type == 'question':
+        do_question_query(args.api_key, args.query)
 
 if __name__ == '__main__':
     main()
