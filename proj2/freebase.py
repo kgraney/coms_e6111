@@ -6,6 +6,9 @@ import urllib2
 
 logger = logging.getLogger(__name__)
 
+def EntityToList(entity_id):
+    return entity_id.split('/')[1:]
+
 class FreebaseApi(object):
     def __init__(self, api_key):
         self.api_key = api_key
@@ -69,9 +72,9 @@ class EntityNode(object):
         self.value = None
 
     def Insert(self, entity, value):
-        return self.InsertHelper(entity.split('/')[1:], value)
+        return self._InsertHelper(EntityToList(entity), value)
 
-    def InsertHelper(self, entity_list, value):
+    def _InsertHelper(self, entity_list, value):
         node_name = entity_list[0]
         try:
             node = self.children[node_name]
@@ -82,7 +85,7 @@ class EntityNode(object):
         if entity_list[1:] == []:
             node.value = value
         else:
-            node.InsertHelper(entity_list[1:], value)
+            node._InsertHelper(entity_list[1:], value)
 
     def AddChild(self, entity, node):
         self.children[entity] = node
@@ -97,6 +100,19 @@ class EntityNode(object):
             self.children[entity] = EntityNode()
             return self.children[entity]
 
+    def MatchEntityId(self, entity_id):
+        lst = EntityToList(entity_id)
+        return self._MatchEntityIdHelper(lst)
+
+    def _MatchEntityIdHelper(self, entity_id_lst):
+        if entity_id_lst == []:
+            return self
+        try:
+            child = self.children[entity_id_lst[0]]
+            return child._MatchEntityIdHelper(entity_id_lst[1:])
+        except (KeyError):
+            return None
+
     @classmethod
     def ConstructTrie(cls, d):
         """
@@ -106,3 +122,4 @@ class EntityNode(object):
         root = cls()
         for entity, value in d.items():
             root.Insert(entity, value)
+        return root
