@@ -2,6 +2,7 @@
 import argparse
 import logging
 import os
+import re
 
 import freebase
 import infobox
@@ -34,6 +35,10 @@ def do_infobox_query(api_key, query):
             break
 
 def do_question_query(api_key, query):
+    result = re.match(r'who\s+created\s+([^?]*)\??', query, re.IGNORECASE)
+    assert result is not None, 'Invalid question!'
+    query = result.group(1)
+
     logger.info('Performing question query for \"%s\"', query)
     results = []
     for kind in (True, False):
