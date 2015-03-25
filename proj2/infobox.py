@@ -23,7 +23,8 @@ class Infobox(object):
         label_col_width = max(p.GetLabelWidth() for p in properties)
         data_col_width = 123 - label_col_width
         print '+ ' + '-'*label_col_width + '---' + '-'*data_col_width + ' +'
-        print entity_names
+        header_str = ','.join(entity_names)
+        print '| %s |' % header_str.center(label_col_width + data_col_width + 3)
 
         divider = '+ ' + '-'*label_col_width + ' + ' + '-'*data_col_width + ' +'
         for p in properties:

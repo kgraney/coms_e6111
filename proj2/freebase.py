@@ -24,6 +24,58 @@ class FreebaseApi(object):
         response = urllib2.urlopen(req)
         return response.read()
 
+class QuestionApi(FreebaseApi):
+    BASE_URL = 'https://www.googleapis.com/freebase/v1/mqlread?'
+    def __init__(self, api_key, kind):
+        super(QuestionApi, self).__init__(api_key)
+        self.kind = kind
+
+    def GetMatchKey(self):
+        if self.kind:
+            return "/book/author/works_written"
+        else:
+            return "/organization/organization_founder/organizations_founded"
+
+    def GetKind(self):
+        if self.kind:
+            return "Author"
+        else:
+            return "Business Person"
+
+    def GetQuery(self, param):
+        if self.kind:
+            types = ["/book/author"]
+        else:
+            types = ["/organization/organization_founder",
+                     "/business/board_member"]
+        return [{
+                self.GetMatchKey(): [{
+                        "a:name": None,
+                        "name~=": param
+                        }],
+                "id": None,
+                "name": None,
+                "type|=": types
+                }]
+
+    def GetApiUrl(self, param):
+        """
+        Args:
+          param - the query string for what was created
+        """
+        query = self.GetQuery(param)
+        url_params = {'query': json.dumps(query),
+                      'key': self.api_key}
+        return self.BASE_URL + urllib.urlencode(url_params)
+
+    def Query(self, query):
+        data = json.loads(self.ExecuteQuery(query))
+        results = []
+        for d in data['result']:
+            creations = ['<%s>' % x['a:name'] for x in d[self.GetMatchKey()]]
+            results.append('%s (as %s) created %s' % (d['name'], self.GetKind(),
+                    ', '.join(creations)))
+        return results
 
 class QueryApi(FreebaseApi):
     BASE_URL = 'https://www.googleapis.com/freebase/v1/search?'

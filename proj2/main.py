@@ -35,6 +35,12 @@ def do_infobox_query(api_key, query):
 
 def do_question_query(api_key, query):
     logger.info('Performing question query for \"%s\"', query)
+    results = []
+    for kind in (True, False):
+        question_api = freebase.QuestionApi(api_key, kind)
+        results.extend(question_api.Query(query))
+    for i,text in enumerate(sorted(results)):
+        print '%d. %s' % (i+1, text)
 
 def main():
     logging.basicConfig(level=logging.INFO)
