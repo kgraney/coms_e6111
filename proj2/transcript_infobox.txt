@@ -1,0 +1,456 @@
+                                                                                                             
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [21:58:06] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "bill gates"                          [±master]
+INFO:__main__:Performing infobox query for "bill gates"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=bill+gates&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/017nt?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                  Author,BusinessPerson,Person                                                  |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Influenced     | * Marc Nicholas Rohde                                                                                         |
+|                | * Naveen Jain                                                                                                 |
+|                | * Cenk Aydin                                                                                                  |
+|                | * Daniel Podgaichenko                                                                                         |
+|                | * yogendrachavda                                                                                              |
+|                | * Yogendra Chavda                                                                                             |
+|                | * Nikhil Raj. R                                                                                               |
+|                | * Austin Cameron                                                                                              |
+|                | * Joel Glenn Wright                                                                                           |
+|                | * Tony Edward                                                                                                 |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Books          | * Business @ the Speed of Thought: Using a Digital Nervous System                                             |
+|                | * The Road Ahead                                                                                              |
+|                | * Open Letter to Hobbyists                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Book about     | * Creative Capitalism: A Conversation with Bill Gates, Warren Buffett, and Other Economic Leaders             |
+|                | * The Microsoft File: The Secret Case against Bill Gates                                                      |
+|                | * Programmers at work                                                                                         |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Founded        | * Bill & Melinda Gates Foundation                                                                             |
+|                | * Microsoft Corporation                                                                                       |
+|                | * Corbis                                                                                                      |
+|                | * bgC3                                                                                                        |
+|                | * Cascade Investment                                                                                          |
+|                | * Microsoft Research                                                                                          |
+|                | * The Global Fund to Fight AIDS, Tuberculosis and Malaria                                                     |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Board member   | To         | Title       | From | Role     | Organization                                                     |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                |            | Co-Chairman | 2000 |          | Bill & Melinda Gates Foundation                                  |
+|                | 2014-02-04 | Chairman    | 1981 | Chairman | Microsoft Corporation                                            |
+|                |            |             | 2004 |          | Berkshire Hathaway                                               |
+|                |            | Chair       | 1989 |          | Corbis                                                           |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Leadership     | Organization          | Title                   | From       | Role                    | To                   |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Microsoft Corporation | Chief Executive Officer | 1975-04-04 | Chief Executive Officer | 2000-01-12           |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Spouses        | Spouse        | From       | Location                                                                         |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Melinda Gates | 1994-01-01 | Lanai                                                                            |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Description    | William Henry "Bill" Gates III is an American business magnate, philanthropist, investor, computer            |
+|                | programmer, and inventor. Gates originally established his reputation as the co-founder of Microsoft, the     |
+|                | world’s largest PC software company, with Paul Allen. Since then he has served as a long term CEO and         |
+|                | chairman of the company. Today he is consistently ranked in the Forbes list of the world's wealthiest people  |
+|                | and was the wealthiest overall from 1995 to 2014 — excluding a few brief periods post-2008. Between 2009 and  |
+|                | 2014 his wealth more than doubled from $40 billion to more than $82 billion. Between 2013 and 2014 his wealth |
+|                | increased by $15 billion, or around $1.5 billion more than the entire GDP of Iceland in 2014. During his      |
+|                | career at Microsoft, Gates held the positions of CEO and chief software architect, he was also the largest    |
+|                | individual shareholder up until May 2014. He has also authored and co-authored several books. Gates is one of |
+|                | the best-known entrepreneurs of the personal computer revolution. Gates has been criticized for his business  |
+|                | tactics, which have been considered anti-competitive, an opinion which has in some cases been upheld by       |
+|                | judicial courts.                                                                                              |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Place of Birth | Seattle                                                                                                       |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Birthday       | 1955-10-28                                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Siblings       | Sibling                                                                                                       |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Libby Gates                                                                                                   |
+|                | Kristi Gates                                                                                                  |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Name           | Bill Gates                                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [21:58:26] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "robert downey jr."                   [±master]
+INFO:__main__:Performing infobox query for "robert downey jr."
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=robert+downey+jr.&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/016z2j?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                          Actor,Person                                                          |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Films          | Film name                 | Character                                                                         |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | 1969                      | Ralph Carr                                                                        |
+|                | A Scanner Darkly          | James Barris                                                                      |
+|                | Air America               | Billy Covington                                                                   |
+|                | Back to School            | Derek Lutz                                                                        |
+|                | Chaplin                   | Charlie Chaplin                                                                   |
+|                | Eros                      | Nick Penrose                                                                      |
+|                | Firstborn                 | Lee                                                                               |
+|                | Game 6                    | Steven Schwimmer                                                                  |
+|                | Good Night, and Good Luck | Joe Wershba                                                                       |
+|                | Heart and Souls           | Thomas Reilly                                                                     |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Spouses        | To         | Spouse               | From       | Location                                                     |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                |            | Susan Downey         | 2005-08-27 | Amagansett                                                   |
+|                | 2004-04-26 | Deborah Falconer     | 1992-05-29 |                                                              |
+|                | 1991       | Sarah Jessica Parker | 1984       |                                                              |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Description    | Robert John Downey, Jr. is an American actor, filmmaker, and singer. Making his screen debut at the age of    |
+|                | five, appearing in his father Robert Downey, Sr.'s film Pound, he has appeared in roles associated with the   |
+|                | Brat Pack, such as Less Than Zero and Weird Science. Other films he has starred in include Air America,       |
+|                | Soapdish, and Natural Born Killers. He starred as Charlie Chaplin, the title character in the 1992 film       |
+|                | Chaplin, which earned him a nomination for the Academy Award for Best Actor. After being released in 2000     |
+|                | from the California Substance Abuse Treatment Facility and State Prison where he was on drug charges, Downey  |
+|                | joined the cast of the TV series Ally McBeal playing Calista Flockhart's love interest. His performance was   |
+|                | praised and he received a Golden Globe Award for Best Performance by an Actor in a Supporting Role in a       |
+|                | Series, Miniseries, or Television Film. His character was written out when Downey was fired after two drug    |
+|                | arrests in late 2000 and early 2001. After one last stay in a court-ordered drug treatment program, Downey    |
+|                | finally achieved sobriety.                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Place of Birth | Manhattan                                                                                                     |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Birthday       | 1965-04-04                                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Siblings       | Sibling                                                                                                       |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Allyson Downey                                                                                                |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Name           | Robert Downey Jr.                                                                                             |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [21:58:38] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "jackson"                             [±master]
+INFO:__main__:Performing infobox query for "jackson"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=jackson&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/09889g?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                               Actor,Author,Person,BusinessPerson                                               |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Films          | Film name                   | Character                                                                       |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Moonwalker                  |                                                                                 |
+|                | The Wiz                     | Scarecrow                                                                       |
+|                | Miss Cast Away              | Agent M.J.                                                                      |
+|                | Men in Black II             | Agent M                                                                         |
+|                | Captain EO                  | Captain EO                                                                      |
+|                | Michael Jackson's Ghosts    | Maestro                                                                         |
+|                | Captain EO Promo & Pre-show | Captain EO                                                                      |
+|                | Wiz on Down the Road        | Scarecrow                                                                       |
+|                | Michael Jackson's Ghosts    | Mayor                                                                           |
+|                | Michael Jackson's Ghosts    | Mayor Ghoul                                                                     |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Influenced     | * Usher                                                                                                       |
+|                | * Justin Timberlake                                                                                           |
+|                | * Britney Spears                                                                                              |
+|                | * Lady Gaga                                                                                                   |
+|                | * Nicole Scherzinger                                                                                          |
+|                | * Leigh Francis                                                                                               |
+|                | * Lenny Henry                                                                                                 |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Books          | * Moonwalk                                                                                                    |
+|                | * Dancing the Dream                                                                                           |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Book about     | * On Michael Jackson                                                                                          |
+|                | * The Passion-Driven Writer and the Digital-Age Literary Marketplace                                          |
+|                | * To Walk a Lifetime in Michael Jackson's Moccasins                                                           |
+|                | * Michael Jackson and Summertime from This Point On                                                           |
+|                | * Looking at the World through Michael Jackson's Left Eye (Part 1)                                            |
+|                | * Looking at the World through Michael Jackson's Left Eye (Part 2)                                            |
+|                | * Looking at the World through Michael Jackson's Left Eye (Part 3 of 4)                                       |
+|                | * Looking at the World through Michael Jackson's Left Eye (Part 4 of 4)                                       |
+|                | * Evidence of Angels                                                                                          |
+|                | * Notes for an Elegy in the Key of Michael (Jackson) 1 and 2                                                  |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Influenced by  | * Charlie Chaplin                                                                                             |
+|                | * James Brown                                                                                                 |
+|                | * Walt Disney                                                                                                 |
+|                | * Redd Foxx                                                                                                   |
+|                | * Nipsey Russell                                                                                              |
+|                | * Devi Sri Prasad                                                                                             |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Spouses        | To         | Spouse             | From       | Location                                                       |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | 1996-08-20 | Lisa Marie Presley | 1994-05-26 | Dominican Republic                                             |
+|                | 1999-10-08 | Debbie Rowe        | 1996-11-14 | Sydney                                                         |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Date of Death  | 2009-06-25                                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Description    | * Michael Joseph Jackson (August 29, 1958 – June 25, 2009) was an American recording artist, dancer, singer-  |
+|                |   songwriter, musician, and philanthropist. Referred to as the King of Pop, Jackson is recognized as the most |
+|                |   successful entertainer of all time by Guinness World Records. His contribution to music, dance, and         |
+|                |   fashion, along with a much-publicized personal life, made him a global figure in popular culture for over   |
+|                |   four decades. The seventh child of the Jackson family, he debuted on the professional music scene along     |
+|                |   with his brothers as a member of The Jackson 5, then the Jacksons in 1964, and began his solo career in     |
+|                |   1971. In the early 1980s, Jackson became a dominant figure in popular music. The music videos for his       |
+|                |   songs, including those of "Beat It", "Billie Jean", and "Thriller", were credited with transforming the     |
+|                |   medium into an art form and a promotional tool, and the popularity of these videos helped to bring the      |
+|                |   relatively new television channel MTV to fame And Cordell Francis Admire Michael Jackson As His Best.       |
+|                |   Videos such as ...                                                                                          |
+|                | * Michael Joseph Jackson was an American singer, songwriter, dancer, and actor. Called the King of Pop, his   |
+|                |   contributions to music and dance, along with his publicized personal life, made him a global figure in      |
+|                |   popular culture for over four decades. The eighth child of the Jackson family, he debuted on the            |
+|                |   professional music scene along with his elder brothers Jackie, Tito, Jermaine, and Marlon as a member of    |
+|                |   The Jackson 5 in 1964, and began his solo career in 1971. In the early 1980s, Jackson became a dominant     |
+|                |   figure in popular music. The music videos for his songs, including those of "Beat It", "Billie Jean", and   |
+|                |   "Thriller", were credited with breaking down racial barriers and with transforming the medium into an art   |
+|                |   form and promotional tool. The popularity of these videos helped to bring the then-relatively-new           |
+|                |   television channel MTV to fame. With videos such as "Black or White" and "Scream", he continued to innovate |
+|                |   the medium throughout the 1990s, as well as forging a reputation as a touring solo artist. Through stage    |
+|                |   and video performances, Jackson popularized a number of complicated dance techniques, such as the robot and |
+|                |   the moonwalk, to which he gave the name.                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Place of Birth | Gary                                                                                                          |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Birthday       | 1958-08-29                                                                                                    |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Siblings       | Sibling                                                                                                       |
+|                | ------------------------------------------------------------------------------------------------------------- |
+|                | Janet Jackson                                                                                                 |
+|                | Jermaine Jackson                                                                                              |
+|                | La Toya Jackson                                                                                               |
+|                | Marlon Jackson                                                                                                |
+|                | Jackie Jackson                                                                                                |
+|                | Randy Jackson                                                                                                 |
+|                | Tito Jackson                                                                                                  |
+|                | Rebbie Jackson                                                                                                |
+|                | Brandon Jackson                                                                                               |
+|                | Joh'Vonnie Jackson                                                                                            |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Cause of Death | Cardiac arrest                                                                                                |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Place of Death | Holmby Hills                                                                                                  |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Name           | Michael Jackson                                                                                               |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+| Founded        | * Sony/ATV Music Publishing                                                                                   |
+|                | * Heal the World Foundation                                                                                   |
+|                | * MJJ Music                                                                                                   |
++ -------------- + ------------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [21:58:48] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "nfl"                                 [±master]
+INFO:__main__:Performing infobox query for "nfl"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=nfl&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/059yj?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                         League,Author                                                          |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Championship     | Super Bowl                                                                                                  |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Name             | National Football League                                                                                    |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Official website | http://www.nfl.com/                                                                                         |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Teams            | Team Name                                                                                                   |
+|                  | ----------------------------------------------------------------------------------------------------------- |
+|                  | Detroit Lions                                                                                               |
+|                  | Carolina Panthers                                                                                           |
+|                  | Arizona Cardinals                                                                                           |
+|                  | Baltimore Ravens                                                                                            |
+|                  | Jacksonville Jaguars                                                                                        |
+|                  | Kansas City Chiefs                                                                                          |
+|                  | Denver Broncos                                                                                              |
+|                  | New York Jets                                                                                               |
+|                  | New York Giants                                                                                             |
+|                  | Oakland Raiders                                                                                             |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Sport            | American football                                                                                           |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Description      | The National Football League is a professional American football league that constitutes one of the four    |
+|                  | major professional sports leagues in North America. It is composed of 32 teams divided equally between the  |
+|                  | National Football Conference and the American Football Conference. The highest professional level of the    |
+|                  | sport in the world, the NFL runs a 17-week regular season from the week after Labor Day to the week after   |
+|                  | Christmas, with each team playing sixteen games and having one bye week each season. Out of the league's 32 |
+|                  | teams, six from each conference compete in the NFL playoffs, a single-elimination tournament culminating in |
+|                  | the Super Bowl, played between the champions of the NFC and AFC. The champions of the Super Bowl are        |
+|                  | awarded the Vince Lombardi Trophy. Various other awards exist to recognize individual players and coaches.  |
+|                  | Most games are played on Sunday afternoons; some games are also played on Mondays and Thursdays during the  |
+|                  | regular season. There are games on Saturdays during the first two playoff weekends. Sometimes, there are    |
+|                  | also Saturday games during the last few weeks of the regular season.                                        |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Books            | * The Official 2003 NFL Record & Fact Book                                                                  |
+|                  | * The NFL Media Information Book, 1983                                                                      |
+|                  | * NFL Record and Roster Manual, 1942                                                                        |
+|                  | * Pocket Almanac 1994                                                                                       |
+|                  | * NFL 1999 Championship Spec Mkt                                                                            |
+|                  | * 2008 NFL Record & Fact Book                                                                               |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Book about       | * Tailgating, Sacks, and Salary Caps: How the NFL Became the Most Successful Sports League in History       |
+|                  | * North Dallas Forty                                                                                        |
+|                  | * Inside the Helmet: A Player's-Eye View of the NFL                                                         |
+|                  | * The Final Season: My Last Year as Head Coach in the NFL                                                   |
+|                  | * Patriot Reign                                                                                             |
+|                  | * League of Denial                                                                                          |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [21:58:52] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "nba"                                 [±master]
+INFO:__main__:Performing infobox query for "nba"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=nba&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/05jvx?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                             League                                                             |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Championship     | The NBA Finals                                                                                              |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Slogan           | Where Amazing Happens                                                                                       |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Name             | National Basketball Association                                                                             |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Official website | http://www.nba.com/                                                                                         |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Teams            | Team Name                                                                                                   |
+|                  | ----------------------------------------------------------------------------------------------------------- |
+|                  | Detroit Pistons                                                                                             |
+|                  | Golden State Warriors                                                                                       |
+|                  | Los Angeles Lakers                                                                                          |
+|                  | Cleveland Cavaliers                                                                                         |
+|                  | Indiana Pacers                                                                                              |
+|                  | Utah Jazz                                                                                                   |
+|                  | Orlando Magic                                                                                               |
+|                  | Phoenix Suns                                                                                                |
+|                  | Charlotte Hornets                                                                                           |
+|                  | Houston Rockets                                                                                             |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Sport            | Basketball                                                                                                  |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+| Description      | The National Basketball Association is the pre-eminent men's professional basketball league in North        |
+|                  | America, and is widely considered to be the premier men's professional basketball league in the world. It   |
+|                  | has 30 franchised member clubs, and is an active member of USA Basketball, which is recognized by FIBA as   |
+|                  | the national governing body for basketball in the United States. The NBA is one of the four major North     |
+|                  | American professional sports leagues. NBA players are the world's best paid sportsmen, by average annual    |
+|                  | salary per player. The league was founded in New York City on June 6, 1946, as the Basketball Association   |
+|                  | of America. The league adopted the name National Basketball Association on August 3, 1949, after merging    |
+|                  | with its rival National Basketball League. The league's several international as well as individual team    |
+|                  | offices are directed out of its head offices located in the Olympic Tower at 645 Fifth Avenue in New York   |
+|                  | City. NBA Entertainment and NBA TV studios are directed out of offices located in Secaucus, New Jersey.     |
++ ---------------- + ----------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [22:00:53] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "ny knicks"                           [±master]
+INFO:__main__:Performing infobox query for "ny knicks"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=ny+knicks&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/0jm3v?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                           SportsTeam                                                           |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Arena         | Madison Square Garden                                                                                          |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Leagues       | League                                                                                                         |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | National Basketball Association                                                                                |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Name          | New York Knicks                                                                                                |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Players       | To   | From | Number | Position       | Name                                                                   |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | 2008 | 2004 | 11     | Shooting guard | Jamal Crawford                                                         |
+|               | 1977 | 1967 |        |                | Bill Bradley                                                           |
+|               | 2000 | 1985 | 33     | Power forward  | Patrick Ewing                                                          |
+|               | 2002 | 1998 | 23     | Power forward  | Marcus Camby                                                           |
+|               | 2008 | 2003 |        |                | Stephon Marbury                                                        |
+|               | 2011 | 2005 |        |                | Eddy Curry                                                             |
+|               | 2010 | 2008 |        |                | Chris Duhon                                                            |
+|               | 2009 | 2005 |        |                | Quentin Richardson                                                     |
+|               | 2011 | 2010 |        |                | Roger Mason, Jr.                                                       |
+|               | 2011 | 2010 |        |                | Ronny Turiaf                                                           |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Locations     | New York City                                                                                                  |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Founded       | 1946                                                                                                           |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Coaches       | To         | From       | Name         | Position                                                              |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | 2014-04-21 | 2011-08-29 | Mike Woodson | Head coach                                                            |
+|               |            | 2014       | Derek Fisher | Head coach                                                            |
+|               |            | 2014       | Kurt Rambis  | Assistant Coach                                                       |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Championships | * 1973 NBA Finals                                                                                              |
+|               | * 1970 NBA Finals                                                                                              |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Sport         | Basketball                                                                                                     |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Description   | The New York Knickerbockers, commonly referred to as the Knicks, are a professional basketball team based in   |
+|               | New York City, New York. The Knicks are part of the Atlantic Division of the Eastern Conference in the         |
+|               | National Basketball Association. The team, established by Ned Irish in 1946, was one of the founding members   |
+|               | of the Basketball Association of America, which became the NBA after merging with the rival National           |
+|               | Basketball League in 1949. The team plays at Madison Square Garden, above Pennsylvania Station in the borough  |
+|               | of Manhattan, and along with the Boston Celtics is one of only two NBA teams still located in its original     |
+|               | city. The Knicks were successful during their early years and were constant playoff contenders under the       |
+|               | franchise's first head coach Joe Lapchick. Beginning in 1950, the Knicks made three consecutive appearances in |
+|               | the NBA Finals, all of which were losing efforts. Lapchick resigned in 1956 and the team subsequently began to |
+|               | falter. It was not until the late 1960s when Red Holzman became head coach that the Knicks began to regain     |
+|               | their former dominance. Holzman successfully guided the Knicks to two championship titles in 1970 and 1973.    |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [22:01:02] 
+> $ python main.py -api_key AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE -query_type infobox -query "miami heat"                          [±master]
+INFO:__main__:Performing infobox query for "miami heat"
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/search?query=miami+heat&key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:freebase:Querying https://www.googleapis.com/freebase/v1/topic/m/0jm2v?key=AIzaSyDLJVRvXRTOyZoM4cS2w_LqHK3bxkYtbkE
+INFO:infobox:Constructing Infobox
++ ------------------------------------------------------------------------------------------------------------------------------ +
+|                                                           SportsTeam                                                           |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Arena         | American Airlines Arena                                                                                        |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Leagues       | League                                                                                                         |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | National Basketball Association                                                                                |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Name          | Miami Heat                                                                                                     |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Players       | To         | From       | Number | Position      | Name                                                        |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | 2008-02    | 2004-07-14 | 32     | Center        | Shaquille O'Neal                                            |
+|               | 2008       | 2005       |        |               | Earl Barron                                                 |
+|               | 2010-07-12 | 2008-06-26 | 30     | Power forward | Michael Beasley                                             |
+|               | 2010-07-13 | 2004       |        |               | Dorell Wright                                               |
+|               | 2011-12-09 | 2008-08-30 |        |               | Jamaal Magloire                                             |
+|               | 2011-03-01 | 2009-10-11 |        |               | Carlos Arroyo                                               |
+|               | 2010-07-13 | 2009       |        |               | Quentin Richardson                                          |
+|               | 2010       | 2009       | 42     | Power forward | Shavlik Randolph                                            |
+|               | 2010-07    | 2008-08-07 |        |               | Yakhouba Diawara                                            |
+|               | 2012-07-27 | 2012-03-21 |        |               | Ronny Turiaf                                                |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Locations     | Miami                                                                                                          |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Founded       | 1988                                                                                                           |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Coaches       | Position   | From    | Name                                                                                    |
+|               | -------------------------------------------------------------------------------------------------------------- |
+|               | Head coach | 2008-04 | Erik Spoelstra                                                                          |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Championships | * 2006 NBA Finals                                                                                              |
+|               | * 2012 NBA Finals                                                                                              |
+|               | * 2013 NBA Finals                                                                                              |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Sport         | Basketball                                                                                                     |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+| Description   | The Miami Heat are an American professional basketball team based in Miami, Florida. The team is a member of   |
+|               | the Southeast Division in the Eastern Conference of the National Basketball Association. They play their home  |
+|               | games at the American Airlines Arena in Downtown Miami. The team owner is Micky Arison, who also owns cruise-  |
+|               | ship giant Carnival Corporation. The team president and de facto general manager is Pat Riley, and the head    |
+|               | coach is Erik Spoelstra. The mascot of the team is Burnie, an anthropomorphic fireball. Formed in 1988 as one  |
+|               | of the NBA's four expansion franchises, the Heat have won three league championships, five conference titles   |
+|               | and 11 division titles. From February 3 to March 27, 2013, the Heat won 27 games in a row, the second-longest  |
+|               | streak in NBA history. In 2013, Forbes valued the Heat at $625 million, sixth-most-valuable among NBA          |
+|               | franchises. The Heat are not related to the Miami Floridians, an ABA team in the early 1970s, although the     |
+|               | Heat have occasionally paid tribute to the older franchise by wearing a replica version of the Floridians'     |
+|               | uniforms for the NBA's "Hardwood Classics Nights" during the 2005–06 and 2011–12 seasons.                      |
++ ------------- + -------------------------------------------------------------------------------------------------------------- +
+                                                                                                                                               
+kevin@shanghai ~/columbia/coms_e6111/proj2                                                                                          [22:01:10] 
+> $                                                                                                                                  [±master]
