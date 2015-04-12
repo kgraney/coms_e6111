@@ -10,7 +10,10 @@ class Itemset(object):
         return set(self.items)
 
     def __repr__(self):
-        return '<%s %0.2f>' % (str(self.items), self.freq)
+        return '<%s %0.4f>' % (str(self.items), self.freq)
+
+    def __str__(self):
+        return '[%s], %f' % (','.join(self.items), self.freq)
 
 def apriori(item_lists, min_sup):
     """
@@ -51,6 +54,5 @@ def apriori_gen(L, k):
     for c in C:  # Prune
         for s in list(combinations(c.items, k)):
             if s not in L_set:
-                print "Deleting ", s
-        pass
+                del c
     return C
