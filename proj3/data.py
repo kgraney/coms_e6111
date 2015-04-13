@@ -1,11 +1,12 @@
 from collections import defaultdict
 import csv
+import gzip
 
 
 def ParseFile(filename):
     integrated_dataset = []
     cross_streets = defaultdict(list)
-    with open(filename, 'rb') as csvfile:
+    with gzip.open(filename, 'rb') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
             accident_list = set()
