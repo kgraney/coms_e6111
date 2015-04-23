@@ -1,5 +1,12 @@
 from collections import defaultdict
-from itertools import combinations
+import itertools
+
+
+def powerset(iterable):
+    "powerset([1,2,3]) --> () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3)"
+    s = list(iterable)
+    return itertools.chain.from_iterable(itertools.combinations(s, r)
+                                         for r in range(len(s)+1))
 
 class Itemset(object):
     def __init__(self, items, freq):
@@ -13,7 +20,32 @@ class Itemset(object):
         return '<%s %0.4f>' % (str(self.items), self.freq)
 
     def __str__(self):
-        return '[%s], %f' % (','.join(self.items), self.freq)
+        return '%s, %f' % (self.list_str(), self.freq)
+
+    def list_str(self):
+        return '[%s]' % ','.join(self.items)
+
+class AssociationRule(object):
+    def __init__(self, dataset, lhs, rhs):
+        self.dataset = dataset
+        self.lhs = lhs
+        self.rhs = rhs
+        self._ComputeConfidence()
+
+    def _ComputeConfidence(self):
+        self.conf = (self.dataset.GetSupport(self.lhs + self.rhs) /
+                     self.dataset.GetSupport(self.lhs))
+
+    def __str__(self):
+        return '[%s] => [%s] (Conf: %f%%, Supp: %f%%)' % (','.join(self.lhs),
+                ','.join(self.rhs), 100*self.conf, 0)
+
+    def __eq__(self, other):
+        return (set(self.lhs) == set(other.lhs) and
+                set(self.rhs ) == set(other.rhs))
+
+    def __hash__(self):
+        return hash(tuple(sorted(self.lhs) + ['|'] + sorted(self.rhs)))
 
 def apriori(item_lists, min_sup):
     """
@@ -51,8 +83,24 @@ def apriori_gen(L, k):
             if (p.items[:-1] == q.items[:-1]) and (p.items[-1] < q.items[-1]):
                 C.add(Itemset(p.items + (q.items[-1],), 0))
     L_set = set(x.items for x in L)
+    C_pruned = set()
     for c in C:  # Prune
-        for s in list(combinations(c.items, k)):
-            if s not in L_set:
-                del c
-    return C
+        for s in list(itertools.combinations(c.items, k)):
+            if s in L_set:
+                C_pruned.add(c)
+    return C_pruned
+
+def assoc_rules(dataset, frequent_items, min_conf):
+    seen_subsets = set()
+    rules = set()
+    for item in frequent_items:
+        for subset in powerset(item.items):
+            if len(subset) <= 1 or subset in seen_subsets:
+                continue
+            seen_subsets.add(subset)
+            for i, rhs in enumerate(subset):
+                lhs = subset[0:i] + subset[i+1:]
+                rule = AssociationRule(dataset, lhs, (rhs,))
+                if rule.conf >= min_conf:
+                    rules.add(rule)
+    return rules

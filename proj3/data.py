@@ -1,21 +1,46 @@
 from collections import defaultdict
+import copy
 import csv
 import gzip
+import logging
 
+logger = logging.getLogger(__name__)
 
 def ParseFile(filename):
     integrated_dataset = []
-    cross_streets = defaultdict(list)
+    row_labels = None
+    logger.info('Reading file %s', filename)
     with gzip.open(filename, 'rb') as csvfile:
         reader = csv.reader(csvfile, delimiter=',', quotechar='"')
         for row in reader:
-            accident_list = set()
-            # reasons
-            accident_list.update(x for x in row[18:23] if x and x != 'Unspecified')
-            # streets
-            accident_list.update(x for x in row[7:8] if x)
-            # vehicles
-            accident_list.update(x for x in row[24:29] if x and x != 'UNKNOWN')
-            integrated_dataset.append(accident_list)
-
+            transaction = []
+            if row_labels is None: 
+                row_labels = row
+            else:
+                for i, value in enumerate(row):
+                    if value == 'Y':
+                        transaction.append(row_labels[i])
+                    elif value == 'N':
+                        transaction.append('not_' + row_labels[i])
+                    if i > 33:  # TODO
+                        break
+                integrated_dataset.append(transaction)
+    logger.info('Finished constructing integrated dataset from %s', filename)
     return integrated_dataset
+
+
+class Dataset(object):
+    def __init__(self, integrated_dataset):
+        self.data = integrated_dataset
+        self.support = defaultdict(set)
+
+        for trans_id, trans_lst in enumerate(self.data):
+            for item in trans_lst:
+                self.support[item].add(trans_id)
+
+    def GetSupport(self, itemset):
+        support_set = copy.copy(self.support[itemset[0]])
+        for item in itemset[1:]:
+            support_set &= self.support[item]
+        return len(support_set)/float(len(self.data))
+
