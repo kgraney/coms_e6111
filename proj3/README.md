@@ -20,7 +20,16 @@ The following arguments should be provided to the script
 ```
 python main.py data/integrated.csv.gz 0.05 0.80
 ```
-The output from this run is provided in `example-run.txt`.
+The output from this run is provided in `example-run.txt`.  These results
+are interesting because it shows that in many high-confidence association
+rules the right-hand side is "Suspect Frisked", and for quite a few the
+left-hand side includes indications of violence.
+
+There are also some interesting association rules such as `[Radio Run] =>
+[Officer in Uniform]` and `[Robbery] => [Outside]`.
+
+Other interesting rules can be exposed by excluding some of the frequent
+items from the integrated dataset file, e.g. "Suspect Frisked".
 
 # Dataset description
 The dataset used is from the NYPD's Stop & Frisk logs for 2003.  Other years'
@@ -72,4 +81,24 @@ The file format used for datafiles is gzipped csv, which was chosen to reduce
 the size of the integrated and source datafiles.
 
 # Manifest of project files
-
+* `./convert.py`
+* `./data`
+* `./data/2007.csv.gz`
+* `./data/2008.csv.gz`
+* `./data/2005.csv.gz`
+* `./data/2003.csv.gz`
+* `./data/2014.csv.gz`
+* `./data/2010.csv.gz`
+* `./data/2013.csv.gz`
+* `./data/integrated.csv.gz`
+* `./data/2009.csv.gz`
+* `./data/2012.csv.gz`
+* `./data/2011.csv.gz`
+* `./data/2004.csv.gz`
+* `./data/2006.csv.gz`
+* `./assoc_list.py`
+* `./main.py`
+* `./README.md`
+* `./example-run.txt`
+* `./data.py`
+* `./assoc_list_test.py`
