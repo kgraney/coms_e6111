@@ -23,7 +23,7 @@ class Itemset(object):
         return '%s, %f' % (self.list_str(), self.freq)
 
     def list_str(self):
-        return '[%s]' % ','.join(self.items)
+        return '[%s]' % ', '.join(self.items)
 
 class AssociationRule(object):
     def __init__(self, dataset, lhs, rhs):
