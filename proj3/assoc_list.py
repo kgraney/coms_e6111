@@ -38,8 +38,8 @@ class AssociationRule(object):
         self.conf = (support / self.dataset.GetSupport(self.lhs))
 
     def __str__(self):
-        return '[%s] => [%s] (Conf: %f%%, Supp: %f%%)' % (','.join(self.lhs),
-                ','.join(self.rhs), 100*self.conf, 100*self.supp)
+        return '[%s] => [%s] (Conf: %f%%, Supp: %f%%)' % (', '.join(self.lhs),
+                ', '.join(self.rhs), 100*self.conf, 100*self.supp)
 
     def __eq__(self, other):
         return (set(self.lhs) == set(other.lhs) and
