@@ -18,12 +18,16 @@ def ParseFile(filename):
                 row_labels = row
             else:
                 for i, value in enumerate(row):
+                    if i == 12:
+                        continue
                     if value == 'Y':
                         transaction.append(row_labels[i])
-                    elif value == 'N':
-                        transaction.append('not_' + row_labels[i])
-                    if i > 33:  # TODO
-                        break
+                    if i == 9:   # Suspected crime
+                        transaction.append(value)
+                    if i == 79:  # Gender
+                        transaction.append(value)
+                    #elif value == 'N':
+                    #    transaction.append('not_' + row_labels[i])
                 integrated_dataset.append(transaction)
     logger.info('Finished constructing integrated dataset from %s', filename)
     return integrated_dataset
