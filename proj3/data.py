@@ -6,6 +6,20 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+def WriteIntegratedDataset(filename, lst):
+    with gzip.open(filename, 'wb') as csvfile:
+        writer = csv.writer(csvfile, delimiter=',', quotechar='"')
+        for row in lst:
+            writer.writerow(row)
+
+def ReadIntegratedDataset(filename):
+    lst = []
+    with gzip.open(filename, 'rb') as csvfile:
+        reader = csv.reader(csvfile, delimiter=',', quotechar='"')
+        for row in reader:
+            lst.append(row)
+    return lst
+
 def ParseFile(filename):
     integrated_dataset = []
     row_labels = None
@@ -18,7 +32,7 @@ def ParseFile(filename):
                 row_labels = row
             else:
                 for i, value in enumerate(row):
-                    if i == 12:
+                    if i == 12:  # Reason for statement being taken
                         continue
                     if value == 'Y':
                         transaction.append(row_labels[i])

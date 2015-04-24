@@ -14,7 +14,7 @@ parser.add_argument('min_conf', type=float)
 def main():
     logging.basicConfig(level=logging.INFO)
     args = parser.parse_args()
-    item_list = data.ParseFile(args.dataset)
+    item_list = data.ReadIntegratedDataset(args.dataset)
     dataset = data.Dataset(item_list)
 
     sum_lens = 0
