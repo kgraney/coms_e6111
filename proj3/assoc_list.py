@@ -33,12 +33,13 @@ class AssociationRule(object):
         self._ComputeConfidence()
 
     def _ComputeConfidence(self):
-        self.conf = (self.dataset.GetSupport(self.lhs + self.rhs) /
-                     self.dataset.GetSupport(self.lhs))
+        support = self.dataset.GetSupport(self.lhs + self.rhs)
+        self.supp = support
+        self.conf = (support / self.dataset.GetSupport(self.lhs))
 
     def __str__(self):
         return '[%s] => [%s] (Conf: %f%%, Supp: %f%%)' % (','.join(self.lhs),
-                ','.join(self.rhs), 100*self.conf, 0)
+                ','.join(self.rhs), 100*self.conf, 100*self.supp)
 
     def __eq__(self, other):
         return (set(self.lhs) == set(other.lhs) and
