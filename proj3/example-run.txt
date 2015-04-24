@@ -1,0 +1,678 @@
+Unique items =  18298
+Average transaction length =  8.23962549191
+==Frequent itemsets (min_sup=5.000000%)
+[Outside], 0.791266
+[Officer In Uniform], 0.619362
+[Additional Circumstances - Area Has High Crime Incidence], 0.478511
+[Suspect Frisked], 0.460333
+[Officer In Uniform, Outside], 0.459562
+[Outside, Suspect Frisked], 0.389914
+[Reason For Stop - Other], 0.375080
+[Additional Circumstances - Area Has High Crime Incidence, Outside], 0.372842
+[Other Persons Stopped, Questioned Or Frisked], 0.371163
+[Other Persons Stopped, Questioned Or Frisked, Outside], 0.301186
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform], 0.279302
+[Officer In Uniform, Suspect Frisked], 0.262249
+[Reason For Stop - Fits A Relevant Description], 0.255715
+[Outside, Reason For Stop - Other], 0.253576
+[Officer In Uniform, Reason For Stop - Other], 0.248945
+[Additional Circumstances - Proximity To Scene Of Offense], 0.235727
+[Additional Circumstances - Time Of Day Fits Crime Incidence], 0.228528
+[Reason For Stop - Furtive Movements], 0.228242
+[Outside, Reason For Stop - Fits A Relevant Description], 0.219980
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked], 0.219507
+[Officer In Uniform, Outside, Suspect Frisked], 0.213483
+[Inside], 0.203748
+[Additional Circumstances - Area Has High Crime Incidence, Suspect Frisked], 0.199271
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Outside], 0.199085
+[Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.197344
+[Additional Circumstances - Proximity To Scene Of Offense, Outside], 0.195442
+[Outside, Reason For Stop - Furtive Movements], 0.195261
+[Physical Force Used By Officer - Hands], 0.193825
+[Reason For Frisk - Furtive Movements], 0.191152
+[Additional Circumstances - Change Direction At Sight Of Officer], 0.188006
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside], 0.186284
+[Reason For Frisk - Furtive Movements, Suspect Frisked], 0.184469
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence], 0.184313
+[Officer In Uniform, Reason For Stop - Fits A Relevant Description], 0.176685
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Other], 0.175722
+[CPW], 0.173372
+[Additional Circumstances - Report By Victim/Witness/Officer], 0.172887
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked], 0.171911
+[Physical Force Used By Officer - Hands, Suspect Frisked], 0.171420
+[Radio Run], 0.170425
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside], 0.169579
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Suspect Frisked], 0.168187
+[Other Persons Stopped, Questioned Or Frisked, Outside, Suspect Frisked], 0.167074
+[Outside, Reason For Frisk - Furtive Movements], 0.165489
+[Outside, Physical Force Used By Officer - Hands], 0.163412
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside], 0.161796
+[Reason For Frisk - Other Suspicion Of Weapons], 0.161603
+[Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.159800
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform], 0.159371
+[CPW, Outside], 0.157730
+[Inside, Officer In Uniform], 0.154814
+[Officer In Uniform, Outside, Reason For Stop - Other], 0.152551
+[Reason For Stop - Casing A Victim Or Location], 0.151706
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Outside], 0.150810
+[Officer In Uniform, Outside, Reason For Stop - Fits A Relevant Description], 0.149766
+[Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.145427
+[Outside, Physical Force Used By Officer - Hands, Suspect Frisked], 0.145215
+[Reason For Stop - Furtive Movements, Suspect Frisked], 0.144985
+[Officer In Uniform, Radio Run], 0.142902
+[CPW, Suspect Frisked], 0.140291
+[Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.140043
+[Additional Circumstances - Report By Victim/Witness/Officer, Outside], 0.139726
+[Reason For Stop - Other, Suspect Frisked], 0.139607
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Outside], 0.137655
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Other], 0.135647
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Officer In Uniform], 0.132483
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Furtive Movements], 0.130481
+[Outside, Reason For Frisk - Other Suspicion Of Weapons], 0.129648
+[Outside, Reason For Stop - Casing A Victim Or Location], 0.129144
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Outside], 0.128548
+[Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.127870
+[CPW, Outside, Suspect Frisked], 0.127335
+[Officer In Uniform, Reason For Stop - Furtive Movements], 0.127180
+[Additional Circumstances - Proximity To Scene Of Offense, Suspect Frisked], 0.126291
+[Outside, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.126173
+[Outside, Radio Run], 0.122101
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Fits A Relevant Description], 0.120714
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform], 0.120466
+[Inside, Reason For Stop - Other], 0.120260
+[Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.119235
+[Additional Circumstances - Evasive Response To Questioning], 0.116387
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Reason For Stop - Other], 0.115511
+[Additional Circumstances - Other], 0.115424
+[Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.115250
+[Outside, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.114783
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description], 0.112676
+[Officer In Uniform, Physical Force Used By Officer - Hands], 0.112607
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Other], 0.112390
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Furtive Movements], 0.110693
+[Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Fits A Relevant Description], 0.110680
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.109772
+[Additional Circumstances - Proximity To Scene Of Offense, Outside, Suspect Frisked], 0.108809
+[Reason For Stop - Suspect Acting As A Lookout], 0.108461
+[Additional Circumstances - Change Direction At Sight Of Officer, Suspect Frisked], 0.108361
+[Outside, Reason For Stop - Other, Suspect Frisked], 0.108144
+[Reason For Stop - Actions Indicative Of A Drug Transaction], 0.106794
+[Reason For Frisk - Violent Crime Suspected], 0.105719
+[Additional Circumstances - Proximity To Scene Of Offense, Outside, Reason For Stop - Fits A Relevant Description], 0.105489
+[Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.104998
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Casing A Victim Or Location], 0.104892
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements], 0.104339
+[Officer In Uniform, Reason For Frisk - Other Suspicion Of Weapons], 0.104065
+[Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform], 0.103947
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Officer In Uniform], 0.103357
+[Additional Circumstances - Area Has High Crime Incidence, Inside], 0.103071
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer], 0.102747
+[Reason For Frisk - Violent Crime Suspected, Suspect Frisked], 0.102679
+[Officer In Uniform, Outside, Reason For Stop - Furtive Movements], 0.102604
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked], 0.101647
+[Additional Circumstances - Report By Victim/Witness/Officer, Suspect Frisked], 0.101634
+[Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.101572
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Officer In Uniform, Outside], 0.100919
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense], 0.100907
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.100658
+[Officer In Uniform, Physical Force Used By Officer - Hands, Suspect Frisked], 0.099720
+[Officer In Uniform, Outside, Radio Run], 0.099160
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Suspect Frisked], 0.099154
+[Officer In Uniform, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.098681
+[Additional Circumstances - Ongoing Investigation], 0.098302
+[Additional Circumstances - Evasive Response To Questioning, Outside], 0.098203
+[Officer In Uniform, Reason For Frisk - Furtive Movements], 0.098128
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Fits A Relevant Description], 0.097444
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Suspect Frisked], 0.096617
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Other], 0.096425
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements], 0.095971
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Suspect Frisked], 0.095735
+[CPW, Officer In Uniform], 0.095498
+[Inside, Officer In Uniform, Reason For Stop - Other], 0.095150
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Outside], 0.094982
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.094777
+[Outside, Reason For Frisk - Violent Crime Suspected], 0.093546
+[Additional Circumstances - Report By Victim/Witness/Officer, Outside, Reason For Stop - Fits A Relevant Description], 0.093248
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked], 0.092875
+[Officer In Uniform, Outside, Physical Force Used By Officer - Hands], 0.091532
+[Outside, Reason For Frisk - Violent Crime Suspected, Suspect Frisked], 0.090885
+[Outside, Reason For Stop - Actions Indicative Of A Drug Transaction], 0.090432
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside, Suspect Frisked], 0.089953
+[Outside, Reason For Stop - Suspect Acting As A Lookout], 0.089897
+[Reason For Stop - Suspicious Bulge], 0.089766
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Casing A Victim Or Location], 0.089623
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements], 0.089375
+[Suspect Searched], 0.088573
+[Other Persons Stopped, Questioned Or Frisked, Physical Force Used By Officer - Hands], 0.088094
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Outside], 0.088075
+[Additional Circumstances - Other, Outside], 0.087292
+[GLA], 0.087168
+[Other Persons Stopped, Questioned Or Frisked, Radio Run], 0.086689
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.086266
+[Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other], 0.085875
+[GLA, Outside], 0.085358
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Other], 0.085035
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked, Outside], 0.085035
+[Officer In Uniform, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.084842
+[Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform, Outside], 0.084793
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked], 0.084755
+[Officer In Uniform, Outside, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.084426
+[CPW, Officer In Uniform, Outside], 0.084395
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Reason For Stop - Fits A Relevant Description], 0.084289
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.084165
+[Additional Circumstances - Area Has High Crime Incidence, Physical Force Used By Officer - Hands], 0.084009
+[Reason For Frisk - Refuse To Comply W Officer'S Directions], 0.083978
+[Officer In Uniform, Reason For Stop - Other, Suspect Frisked], 0.083817
+[Additional Circumstances - Report By Victim/Witness/Officer, Outside, Suspect Frisked], 0.083605
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Reason For Stop - Furtive Movements], 0.083587
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Furtive Movements], 0.083313
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense, Outside], 0.083183
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Suspect Frisked], 0.083164
+[Additional Circumstances - Ongoing Investigation, Outside], 0.082443
+[Suspect Frisked, Suspect Searched], 0.081914
+[Additional Circumstances - Report By Victim/Witness/Officer, Other Persons Stopped, Questioned Or Frisked], 0.081896
+[Reason For Frisk - Refuse To Comply W Officer'S Directions, Suspect Frisked], 0.081759
+[Officer In Uniform, Outside, Physical Force Used By Officer - Hands, Suspect Frisked], 0.081535
+[Radio Run, Suspect Frisked], 0.081523
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Suspect Frisked], 0.081498
+[Reason For Frisk - Suspicious Bulge], 0.081150
+[Radio Run, Reason For Stop - Fits A Relevant Description], 0.081032
+[Outside, Reason For Stop - Suspicious Bulge], 0.080907
+[Officer In Uniform, Outside, Reason For Frisk - Furtive Movements], 0.080696
+[Officer In Uniform, Outside, Reason For Frisk - Other Suspicion Of Weapons], 0.080466
+[Other Persons Stopped, Questioned Or Frisked, Physical Force Used By Officer - Hands, Suspect Frisked], 0.079521
+[Officer In Uniform, Reason For Stop - Casing A Victim Or Location], 0.079328
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Furtive Movements], 0.079253
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Other], 0.079216
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Outside, Suspect Frisked], 0.079198
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Furtive Movements, Suspect Frisked], 0.079042
+[Reason For Frisk - Suspicious Bulge, Suspect Frisked], 0.079017
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Officer In Uniform, Outside], 0.078756
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Reason For Stop - Fits A Relevant Description], 0.078327
+[Officer In Uniform, Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.078085
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Suspect Frisked], 0.077985
+[Arrest Made], 0.077618
+[Additional Circumstances - Area Has High Crime Incidence, Inside, Officer In Uniform], 0.077618
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description], 0.077208
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.077121
+[CPW, Officer In Uniform, Suspect Frisked], 0.076816
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Fits A Relevant Description], 0.076705
+[CPW, Reason For Stop - Furtive Movements], 0.076182
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Suspect Acting As A Lookout], 0.075778
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Other], 0.075256
+[Additional Circumstances - Other, Officer In Uniform], 0.075132
+[Additional Circumstances - Area Has High Crime Incidence, Physical Force Used By Officer - Hands, Suspect Frisked], 0.074958
+[Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements], 0.074790
+[Physical Force Used By Officer - Other], 0.074491
+[Officer In Uniform, Reason For Stop - Furtive Movements, Suspect Frisked], 0.074218
+[Other Persons Stopped, Questioned Or Frisked, Outside, Physical Force Used By Officer - Hands], 0.074212
+[Reason For Stop - Suspicious Bulge, Suspect Frisked], 0.074162
+[Additional Circumstances - Evasive Response To Questioning, Suspect Frisked], 0.073590
+[Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.073180
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Outside, Reason For Stop - Fits A Relevant Description], 0.072993
+[Additional Circumstances - Area Has High Crime Incidence, CPW], 0.072726
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Furtive Movements], 0.072713
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements], 0.072651
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.072533
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Furtive Movements], 0.072322
+[Outside, Reason For Frisk - Suspicious Bulge], 0.071706
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Actions Indicative Of A Drug Transaction], 0.071520
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Other Suspicion Of Weapons], 0.070749
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Outside, Suspect Frisked], 0.070730
+[Outside, Reason For Frisk - Refuse To Comply W Officer'S Directions], 0.070475
+[CPW, Outside, Reason For Stop - Furtive Movements], 0.070450
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Physical Force Used By Officer - Hands], 0.070388
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.070245
+[Additional Circumstances - Other, Reason For Stop - Other], 0.070195
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Reason For Stop - Furtive Movements], 0.069897
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Report By Victim/Witness/Officer], 0.069822
+[Outside, Reason For Frisk - Suspicious Bulge, Suspect Frisked], 0.069742
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Radio Run], 0.069704
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Outside], 0.069636
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked], 0.069549
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.069207
+[Outside, Radio Run, Reason For Stop - Fits A Relevant Description], 0.068964
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside], 0.068946
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.068853
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Suspect Frisked], 0.068834
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Outside, Suspect Frisked], 0.068666
+[Radio Run, Reason For Stop - Other], 0.068623
+[Additional Circumstances - Change Direction At Sight Of Officer, Other Persons Stopped, Questioned Or Frisked], 0.068591
+[Outside, Reason For Frisk - Refuse To Comply W Officer'S Directions, Suspect Frisked], 0.068579
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Furtive Movements], 0.068324
+[Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.068299
+[CPW, Reason For Frisk - Furtive Movements], 0.068237
+[Inside, Other Persons Stopped, Questioned Or Frisked], 0.068181
+[Inside, Suspect Frisked], 0.067852
+[Officer In Uniform, Outside, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.067634
+[CPW, Officer In Uniform, Outside, Suspect Frisked], 0.067572
+[Other Persons Stopped, Questioned Or Frisked, Outside, Radio Run], 0.067230
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Suspect Frisked], 0.067224
+[Other Persons Stopped, Questioned Or Frisked, Outside, Physical Force Used By Officer - Hands, Suspect Frisked], 0.067149
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.067019
+[Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other, Suspect Frisked], 0.066981
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked], 0.066950
+[Additional Circumstances - Area Has High Crime Incidence, CPW, Outside], 0.066938
+[ROBBERY], 0.066888
+[Outside, Suspect Searched], 0.066838
+[Additional Circumstances - Report By Victim/Witness/Officer, Other Persons Stopped, Questioned Or Frisked, Outside], 0.066820
+[Outside, Reason For Stop - Suspicious Bulge, Suspect Frisked], 0.066720
+[Officer In Uniform, Radio Run, Reason For Stop - Fits A Relevant Description], 0.066670
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.066527
+[Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description], 0.066503
+[Outside, Radio Run, Suspect Frisked], 0.066471
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Fits A Relevant Description], 0.066391
+[CPW, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.066185
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Fits A Relevant Description], 0.066179
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Evasive Response To Questioning], 0.065526
+[Physical Force Used By Officer - Suspect On Ground], 0.065383
+[Officer In Uniform, Radio Run, Suspect Frisked], 0.064992
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Other, Suspect Frisked], 0.064911
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Outside, Reason For Stop - Fits A Relevant Description], 0.064905
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.064812
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Outside, Reason For Stop - Other], 0.064557
+[Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements], 0.064526
+[Outside, Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements], 0.064407
+[CPW, Reason For Stop - Furtive Movements, Suspect Frisked], 0.064202
+[Officer In Uniform, Outside, Reason For Stop - Casing A Victim Or Location], 0.064177
+[Basis Of Search - Other], 0.064146
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Reason For Frisk - Furtive Movements], 0.064072
+[Additional Circumstances - Proximity To Scene Of Offense, Outside, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.063985
+[Outside, Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other], 0.063873
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Ongoing Investigation], 0.063686
+[Additional Circumstances - Evasive Response To Questioning, Outside, Suspect Frisked], 0.063518
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Suspect Acting As A Lookout], 0.063158
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Other], 0.063133
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Physical Force Used By Officer - Hands, Suspect Frisked], 0.063121
+[CPW, Outside, Reason For Frisk - Furtive Movements], 0.063021
+[Outside, Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.063021
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.063015
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Reason For Stop - Furtive Movements], 0.063002
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements, Suspect Frisked], 0.062859
+[Additional Circumstances - Area Has High Crime Incidence, Inside, Reason For Stop - Other], 0.062779
+[Officer In Uniform, Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.062629
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Casing A Victim Or Location], 0.062486
+[Additional Circumstances - Proximity To Scene Of Offense, Radio Run], 0.062412
+[Outside, Suspect Frisked, Suspect Searched], 0.062362
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Furtive Movements], 0.062287
+[Basis Of Search - Other, Suspect Searched], 0.062144
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.062033
+[Arrest Made, Suspect Frisked], 0.061908
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform], 0.061604
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Time Of Day Fits Crime Incidence], 0.061436
+[Officer In Uniform, Outside, Reason For Stop - Other, Suspect Frisked], 0.061367
+[CPW, Outside, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.061094
+[Additional Circumstances - Area Has High Crime Incidence, Radio Run], 0.061057
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Other Suspicion Of Weapons], 0.061001
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.060609
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.060435
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Actions Indicative Of A Drug Transaction], 0.060429
+[BURGLARY], 0.060379
+[Additional Circumstances - Area Has High Crime Incidence, CPW, Suspect Frisked], 0.060373
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.060180
+[Officer In Uniform, Reason For Stop - Suspect Acting As A Lookout], 0.060118
+[Outside, ROBBERY], 0.060080
+[Officer In Uniform, Radio Run, Reason For Stop - Other], 0.060049
+[Officer In Uniform, Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other], 0.059956
+[CPW, Other Persons Stopped, Questioned Or Frisked], 0.059875
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Other], 0.059627
+[Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.059589
+[Additional Circumstances - Change Direction At Sight Of Officer, Other Persons Stopped, Questioned Or Frisked, Outside], 0.059558
+[Physical Force Used By Officer - Hands, Reason For Stop - Other], 0.059477
+[Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements, Suspect Frisked], 0.059465
+[CPW, Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.059235
+[Additional Circumstances - Evasive Response To Questioning, Reason For Stop - Furtive Movements], 0.059005
+[Officer In Uniform, Reason For Frisk - Violent Crime Suspected], 0.058899
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Report By Victim/Witness/Officer, Outside], 0.058849
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Furtive Movements, Suspect Frisked], 0.058731
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.058713
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.058675
+[Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description], 0.058595
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Time Of Day Fits Crime Incidence], 0.058539
+[Officer In Uniform, Reason For Stop - Actions Indicative Of A Drug Transaction], 0.058464
+[Outside, Physical Force Used By Officer - Other], 0.058333
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Evasive Response To Questioning], 0.058122
+[Additional Circumstances - Report By Victim/Witness/Officer, Outside, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.058103
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Casing A Victim Or Location], 0.058060
+[Basis Of Search - Other, Suspect Frisked], 0.057880
+[CPW, Physical Force Used By Officer - Hands], 0.057817
+[Additional Circumstances - Proximity To Scene Of Offense, Physical Force Used By Officer - Hands], 0.057805
+[Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Other], 0.057737
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Other Suspicion Of Weapons], 0.057619
+[Physical Force Used By Officer - Suspect On Ground, Suspect Frisked], 0.057600
+[Officer In Uniform, Reason For Frisk - Violent Crime Suspected, Suspect Frisked], 0.057395
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description], 0.057252
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Outside], 0.057134
+[Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.057053
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Suspect Frisked], 0.056997
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.056767
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements], 0.056630
+[Physical Force Used By Officer - Handcuffs], 0.056549
+[Additional Circumstances - Evasive Response To Questioning, Officer In Uniform], 0.056518
+[Basis Of Search - Other, Suspect Frisked, Suspect Searched], 0.056444
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description], 0.056282
+[Officer In Uniform, Outside, Radio Run, Reason For Stop - Fits A Relevant Description], 0.056139
+[Additional Circumstances - Proximity To Scene Of Offense, Outside, Reason For Stop - Other], 0.056089
+[Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform, Suspect Frisked], 0.056077
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements], 0.055965
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.055921
+[Additional Circumstances - Report By Victim/Witness/Officer, Radio Run], 0.055840
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked], 0.055785
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Other], 0.055704
+[Arrest Made, Outside], 0.055660
+[CPW, Reason For Stop - Suspicious Bulge], 0.055436
+[Additional Circumstances - Area Has High Crime Incidence, CPW, Outside, Suspect Frisked], 0.055343
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Reason For Stop - Other], 0.055331
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Outside, Reason For Stop - Furtive Movements], 0.055324
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Outside, Suspect Frisked], 0.055312
+[Outside, Physical Force Used By Officer - Suspect On Ground], 0.055306
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Evasive Response To Questioning, Outside], 0.055250
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Other, Suspect Frisked], 0.055244
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside], 0.055138
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Reason For Stop - Casing A Victim Or Location], 0.054647
+[CPW, Physical Force Used By Officer - Hands, Suspect Frisked], 0.054224
+[Physical Force Used By Officer - Hands, Reason For Frisk - Other Suspicion Of Weapons], 0.054174
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.053926
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Reason For Stop - Furtive Movements], 0.053895
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Ongoing Investigation, Outside], 0.053832
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform], 0.053820
+[Additional Circumstances - Report By Victim/Witness/Officer, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description], 0.053820
+[Reason For Stop - Casing A Victim Or Location, Suspect Frisked], 0.053776
+[Summons Issued], 0.053727
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Fits A Relevant Description], 0.053658
+[CPW, Other Persons Stopped, Questioned Or Frisked, Outside], 0.053627
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Frisk - Furtive Movements], 0.053546
+[Additional Circumstances - Other, Officer In Uniform, Outside], 0.053484
+[CPW, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.053335
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Reason For Stop - Casing A Victim Or Location], 0.053323
+[Additional Circumstances - Other, Suspect Frisked], 0.052832
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Reason For Stop - Other], 0.052825
+[Physical Force Used By Officer - Hands, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.052807
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Casing A Victim Or Location], 0.052757
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Outside, Radio Run], 0.052744
+[CPW, Outside, Physical Force Used By Officer - Hands], 0.052322
+[Additional Circumstances - Proximity To Scene Of Offense, Physical Force Used By Officer - Hands, Suspect Frisked], 0.052303
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements, Suspect Frisked], 0.052241
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.052166
+[Officer In Uniform, Outside, Radio Run, Suspect Frisked], 0.052166
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.052123
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked, Outside, Suspect Frisked], 0.052011
+[Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform, Reason For Stop - Furtive Movements], 0.051893
+[CPW, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked], 0.051799
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Frisk - Furtive Movements, Suspect Frisked], 0.051744
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Furtive Movements], 0.051737
+[Physical Force Used By Officer - Hands, Reason For Stop - Other, Suspect Frisked], 0.051719
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Furtive Movements, Suspect Frisked], 0.051669
+[Outside, Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description], 0.051582
+[Officer In Uniform, Suspect Searched], 0.051514
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Officer In Uniform, Reason For Stop - Other], 0.051470
+[Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Fits A Relevant Description], 0.051426
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.051402
+[Outside, Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other, Suspect Frisked], 0.051327
+[Additional Circumstances - Evasive Response To Questioning, Outside, Reason For Stop - Furtive Movements], 0.051277
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Violent Crime Suspected], 0.051265
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Time Of Day Fits Crime Incidence, Outside], 0.051196
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Frisk - Violent Crime Suspected], 0.051128
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Radio Run], 0.050979
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Time Of Day Fits Crime Incidence, Outside], 0.050973
+[CPW, Outside, Reason For Stop - Suspicious Bulge], 0.050966
+[Additional Circumstances - Report By Victim/Witness/Officer, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.050960
+[Officer In Uniform, Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements], 0.050923
+[Officer In Uniform, Outside, Reason For Frisk - Violent Crime Suspected], 0.050861
+[Additional Circumstances - Proximity To Scene Of Offense, Outside, Radio Run], 0.050830
+[CPW, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked], 0.050830
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Other, Suspect Frisked], 0.050805
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense, Suspect Frisked], 0.050724
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Evasive Response To Questioning, Outside], 0.050569
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Time Of Day Fits Crime Incidence], 0.050562
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Stop - Casing A Victim Or Location], 0.050556
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked], 0.050432
+[Additional Circumstances - Area Has High Crime Incidence, Inside, Officer In Uniform, Reason For Stop - Other], 0.050401
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Violent Crime Suspected, Suspect Frisked], 0.050239
+[Outside, Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description, Suspect Frisked], 0.050214
+[Additional Circumstances - Area Has High Crime Incidence, Officer In Uniform, Radio Run], 0.050146
+[Reason For Frisk - Suspicious Bulge, Reason For Stop - Suspicious Bulge], 0.050108
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Time Of Day Fits Crime Incidence], 0.050090
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Outside, Suspect Frisked], 0.050059
+
+==High-confidence association rules (min_conf=80.000000%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Violent Crime Suspected] => [Suspect Frisked] (Conf: 97.999030%, Supp: 5.023904%)
+[GLA] => [Outside] (Conf: 97.924542%, Supp: 8.535850%)
+[Outside, Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 97.847490%, Supp: 6.302106%)
+[Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 97.847049%, Supp: 7.317953%)
+[Basis Of Search - Other, Suspect Frisked] => [Suspect Searched] (Conf: 97.518797%, Supp: 5.644354%)
+[Physical Force Used By Officer - Hands, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 97.475327%, Supp: 5.280663%)
+[Officer In Uniform, Reason For Frisk - Violent Crime Suspected] => [Suspect Frisked] (Conf: 97.445641%, Supp: 5.739473%)
+[Reason For Frisk - Suspicious Bulge] => [Suspect Frisked] (Conf: 97.372252%, Supp: 7.901723%)
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 97.370337%, Supp: 6.652741%)
+[Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description] => [Suspect Frisked] (Conf: 97.368700%, Supp: 5.705280%)
+[Reason For Frisk - Refuse To Comply W Officer'S Directions] => [Suspect Frisked] (Conf: 97.357122%, Supp: 8.175889%)
+[Outside, Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description] => [Suspect Frisked] (Conf: 97.348439%, Supp: 5.021417%)
+[Outside, Reason For Frisk - Refuse To Comply W Officer'S Directions] => [Suspect Frisked] (Conf: 97.309457%, Supp: 6.857900%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 97.309382%, Supp: 7.712106%)
+[Outside, Reason For Frisk - Suspicious Bulge] => [Suspect Frisked] (Conf: 97.260274%, Supp: 6.974156%)
+[Outside, Reason For Frisk - Violent Crime Suspected] => [Suspect Frisked] (Conf: 97.155579%, Supp: 9.088535%)
+[Reason For Frisk - Violent Crime Suspected] => [Suspect Frisked] (Conf: 97.124375%, Supp: 10.267888%)
+[CPW, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 97.120877%, Supp: 5.179949%)
+[CPW, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.993440%, Supp: 6.618548%)
+[CPW, Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.941896%, Supp: 6.109381%)
+[Basis Of Search - Other] => [Suspect Searched] (Conf: 96.879240%, Supp: 6.214447%)
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.871474%, Supp: 5.871272%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.817388%, Supp: 6.203256%)
+[Officer In Uniform, Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.764253%, Supp: 7.808469%)
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.747192%, Supp: 5.676682%)
+[Outside, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.737521%, Supp: 10.157226%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.737376%, Supp: 5.216629%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.706865%, Supp: 6.481153%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.688345%, Supp: 7.024513%)
+[Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 96.657803%, Supp: 11.524952%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.632997%, Supp: 5.174354%)
+[Officer In Uniform, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.585150%, Supp: 9.477715%)
+[Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.562606%, Supp: 15.980006%)
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.521981%, Supp: 8.626617%)
+[Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.503724%, Supp: 18.446886%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements] => [Suspect Frisked] (Conf: 96.472621%, Supp: 10.065837%)
+[CPW, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 93.784946%, Supp: 5.422410%)
+[Outside, Suspect Searched] => [Suspect Frisked] (Conf: 93.302949%, Supp: 6.236206%)
+[Suspect Searched] => [Suspect Frisked] (Conf: 92.482628%, Supp: 8.191432%)
+[CPW, Reason For Stop - Furtive Movements] => [Outside] (Conf: 92.475926%, Supp: 7.045029%)
+[CPW, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 92.356050%, Supp: 6.302106%)
+[CPW, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 92.306970%, Supp: 6.109381%)
+[CPW, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 92.263000%, Supp: 5.923494%)
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 92.249424%, Supp: 5.224089%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 92.157241%, Supp: 5.946497%)
+[Additional Circumstances - Area Has High Crime Incidence, CPW] => [Outside] (Conf: 92.041375%, Supp: 6.693772%)
+[CPW, Reason For Stop - Suspicious Bulge] => [Outside] (Conf: 91.936750%, Supp: 5.096642%)
+[Additional Circumstances - Area Has High Crime Incidence, CPW, Suspect Frisked] => [Outside] (Conf: 91.669241%, Supp: 5.534314%)
+[CPW] => [Outside] (Conf: 90.977875%, Supp: 15.772982%)
+[Basis Of Search - Other, Suspect Searched] => [Suspect Frisked] (Conf: 90.826331%, Supp: 5.644354%)
+[CPW, Suspect Frisked] => [Outside] (Conf: 90.764867%, Supp: 12.733524%)
+[CPW, Physical Force Used By Officer - Hands] => [Outside] (Conf: 90.494624%, Supp: 5.232171%)
+[Other Persons Stopped, Questioned Or Frisked, Outside, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 90.483371%, Supp: 6.714910%)
+[Additional Circumstances - Proximity To Scene Of Offense, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 90.481824%, Supp: 5.230306%)
+[Other Persons Stopped, Questioned Or Frisked, Outside, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 90.461804%, Supp: 5.212277%)
+[Other Persons Stopped, Questioned Or Frisked, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 90.268172%, Supp: 7.952080%)
+[Basis Of Search - Other] => [Suspect Frisked] (Conf: 90.230665%, Supp: 5.787965%)
+[Reason For Stop - Suspicious Bulge] => [Outside] (Conf: 90.130895%, Supp: 8.090717%)
+[Reason For Stop - Suspicious Bulge, Suspect Frisked] => [Outside] (Conf: 89.965630%, Supp: 6.672013%)
+[ROBBERY] => [Outside] (Conf: 89.822474%, Supp: 6.008045%)
+[Outside, Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description] => [Suspect Frisked] (Conf: 89.781735%, Supp: 5.140161%)
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 89.674969%, Supp: 6.312053%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description] => [Suspect Frisked] (Conf: 89.604562%, Supp: 5.958931%)
+[CPW, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 89.564947%, Supp: 5.362727%)
+[Additional Circumstances - Area Has High Crime Incidence, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 89.225191%, Supp: 7.495757%)
+[Officer In Uniform, Outside, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 89.078313%, Supp: 8.153509%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 89.068541%, Supp: 6.301484%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 88.962516%, Supp: 5.592132%)
+[Outside, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 88.864371%, Supp: 14.521514%)
+[Officer In Uniform, Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 88.555181%, Supp: 9.971962%)
+[Outside, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 88.534574%, Supp: 11.478325%)
+[Reason For Frisk - Violent Crime Suspected, Suspect Frisked] => [Outside] (Conf: 88.514168%, Supp: 9.088535%)
+[Reason For Frisk - Violent Crime Suspected] => [Outside] (Conf: 88.485739%, Supp: 9.354620%)
+[Physical Force Used By Officer - Hands] => [Suspect Frisked] (Conf: 88.440196%, Supp: 17.141951%)
+[CPW, Officer In Uniform] => [Outside] (Conf: 88.373153%, Supp: 8.439487%)
+[Reason For Frisk - Suspicious Bulge] => [Outside] (Conf: 88.362828%, Supp: 7.170611%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Suspect Frisked] => [Outside] (Conf: 88.347676%, Supp: 9.573456%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 88.308700%, Supp: 6.203256%)
+[Reason For Frisk - Suspicious Bulge, Suspect Frisked] => [Outside] (Conf: 88.261212%, Supp: 6.974156%)
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 88.214622%, Supp: 6.398468%)
+[Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 88.195189%, Supp: 12.786989%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 88.190998%, Supp: 6.407172%)
+[Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 88.132485%, Supp: 10.157226%)
+[Physical Force Used By Officer - Suspect On Ground] => [Suspect Frisked] (Conf: 88.095464%, Supp: 5.759989%)
+[Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Outside] (Conf: 88.059857%, Supp: 10.499779%)
+[Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 88.031830%, Supp: 5.158190%)
+[Reason For Frisk - Violent Crime Suspected, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 88.013512%, Supp: 5.021417%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 87.975019%, Supp: 5.166894%)
+[CPW, Officer In Uniform, Suspect Frisked] => [Outside] (Conf: 87.965361%, Supp: 6.757185%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 87.851542%, Supp: 5.224089%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer, Suspect Frisked] => [Outside] (Conf: 87.827225%, Supp: 5.005875%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Furtive Movements] => [Outside] (Conf: 87.763754%, Supp: 5.663005%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 87.587530%, Supp: 5.676682%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 87.557024%, Supp: 6.920691%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Outside] (Conf: 87.551020%, Supp: 5.867542%)
+[Radio Run, Reason For Stop - Other] => [Officer In Uniform] (Conf: 87.506795%, Supp: 6.004936%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Time Of Day Fits Crime Incidence] => [Outside] (Conf: 87.457519%, Supp: 5.119645%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Casing A Victim Or Location] => [Outside] (Conf: 87.453985%, Supp: 5.464685%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 87.404063%, Supp: 6.017992%)
+[Additional Circumstances - Proximity To Scene Of Offense, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 87.387341%, Supp: 10.548893%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements] => [Outside] (Conf: 87.095938%, Supp: 8.358667%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Casing A Victim Or Location] => [Outside] (Conf: 87.075704%, Supp: 5.055610%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Evasive Response To Questioning] => [Outside] (Conf: 87.003958%, Supp: 5.056854%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Other] => [Suspect Frisked] (Conf: 86.955158%, Supp: 5.171867%)
+[Additional Circumstances - Evasive Response To Questioning, Reason For Stop - Furtive Movements] => [Outside] (Conf: 86.903382%, Supp: 5.127727%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 86.830418%, Supp: 5.955822%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Furtive Movements] => [Outside] (Conf: 86.806955%, Supp: 7.232159%)
+[Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 86.760431%, Supp: 12.617267%)
+[Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 86.658460%, Supp: 14.004265%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Furtive Movements] => [Outside] (Conf: 86.645007%, Supp: 6.300241%)
+[Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 86.627123%, Supp: 15.980006%)
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 86.598318%, Supp: 7.299302%)
+[Reason For Frisk - Furtive Movements] => [Outside] (Conf: 86.574300%, Supp: 16.548856%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 86.553736%, Supp: 6.639063%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Furtive Movements] => [Outside] (Conf: 86.525601%, Supp: 5.389460%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 86.482013%, Supp: 9.744422%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Additional Circumstances - Time Of Day Fits Crime Incidence] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 86.374257%, Supp: 5.056232%)
+[Officer In Uniform, Reason For Frisk - Violent Crime Suspected] => [Outside] (Conf: 86.352122%, Supp: 5.086073%)
+[Additional Circumstances - Evasive Response To Questioning, Suspect Frisked] => [Outside] (Conf: 86.314100%, Supp: 6.351841%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 86.263603%, Supp: 6.652741%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 86.259781%, Supp: 5.140161%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 86.209602%, Supp: 6.832410%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Suspect Frisked] => [Outside] (Conf: 86.200574%, Supp: 6.722370%)
+[Additional Circumstances - Proximity To Scene Of Offense, Suspect Frisked] => [Outside] (Conf: 86.157330%, Supp: 10.880877%)
+[Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 86.118427%, Supp: 6.302106%)
+[Physical Force Used By Officer - Hands, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 86.118038%, Supp: 6.440743%)
+[Physical Force Used By Officer - Hands, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 86.089558%, Supp: 5.725174%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Suspect Frisked] => [Outside] (Conf: 86.075542%, Supp: 8.316392%)
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked] => [Outside] (Conf: 86.061105%, Supp: 5.201087%)
+[Additional Circumstances - Change Direction At Sight Of Officer] => [Outside] (Conf: 86.058662%, Supp: 16.179570%)
+[Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 86.025479%, Supp: 21.997998%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Change Direction At Sight Of Officer] => [Outside] (Conf: 85.720336%, Supp: 8.807530%)
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 85.715436%, Supp: 6.617926%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 85.701933%, Supp: 8.626617%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Furtive Movements] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 85.661765%, Supp: 6.228746%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 85.658106%, Supp: 8.937464%)
+[Officer In Uniform, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 85.554086%, Supp: 8.442596%)
+[Reason For Stop - Furtive Movements] => [Outside] (Conf: 85.550078%, Supp: 19.526145%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Reason For Stop - Furtive Movements] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 85.543714%, Supp: 5.389460%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Casing A Victim Or Location] => [Outside] (Conf: 85.443338%, Supp: 8.962332%)
+[Reason For Stop - Casing A Victim Or Location] => [Outside] (Conf: 85.128268%, Supp: 12.914436%)
+[Radio Run, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 85.108179%, Supp: 6.896445%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Fits A Relevant Description, Suspect Frisked] => [Outside] (Conf: 85.071910%, Supp: 5.810346%)
+[CPW, Other Persons Stopped, Questioned Or Frisked] => [Suspect Frisked] (Conf: 84.892535%, Supp: 5.082965%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Furtive Movements] => [Outside] (Conf: 84.834191%, Supp: 11.069250%)
+[Officer In Uniform, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 84.764251%, Supp: 14.976593%)
+[Physical Force Used By Officer - Hands, Suspect Frisked] => [Outside] (Conf: 84.713306%, Supp: 14.521514%)
+[Suspect Frisked] => [Outside] (Conf: 84.702546%, Supp: 38.991365%)
+[Reason For Stop - Actions Indicative Of A Drug Transaction] => [Outside] (Conf: 84.678077%, Supp: 9.043152%)
+[Other Persons Stopped, Questioned Or Frisked, Suspect Frisked] => [Outside] (Conf: 84.661185%, Supp: 16.707388%)
+[Physical Force Used By Officer - Suspect On Ground] => [Outside] (Conf: 84.586859%, Supp: 5.530584%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Ongoing Investigation] => [Outside] (Conf: 84.527528%, Supp: 5.383243%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Actions Indicative Of A Drug Transaction] => [Outside] (Conf: 84.492350%, Supp: 6.042860%)
+[Other Persons Stopped, Questioned Or Frisked, Physical Force Used By Officer - Hands, Suspect Frisked] => [Outside] (Conf: 84.442186%, Supp: 6.714910%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Reason For Stop - Casing A Victim Or Location] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 84.429410%, Supp: 5.275690%)
+[Additional Circumstances - Area Has High Crime Incidence, Suspect Frisked] => [Outside] (Conf: 84.400836%, Supp: 16.818671%)
+[Officer In Uniform, Reason For Stop - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 84.385994%, Supp: 6.262939%)
+[Additional Circumstances - Evasive Response To Questioning] => [Outside] (Conf: 84.375835%, Supp: 9.820268%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Evasive Response To Questioning] => [Outside] (Conf: 84.316888%, Supp: 5.524989%)
+[Physical Force Used By Officer - Hands] => [Outside] (Conf: 84.308946%, Supp: 16.341210%)
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Report By Victim/Witness/Officer] => [Outside] (Conf: 84.284569%, Supp: 5.884949%)
+[CPW, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 84.274523%, Supp: 6.420227%)
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Suspect Frisked] => [Outside] (Conf: 84.255092%, Supp: 6.866603%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 84.249846%, Supp: 9.324779%)
+[Other Persons Stopped, Questioned Or Frisked, Physical Force Used By Officer - Hands] => [Outside] (Conf: 84.241355%, Supp: 7.421154%)
+[Additional Circumstances - Area Has High Crime Incidence, Physical Force Used By Officer - Hands, Suspect Frisked] => [Outside] (Conf: 84.208344%, Supp: 6.312053%)
+[Officer In Uniform, Radio Run, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 84.203655%, Supp: 5.613891%)
+[CPW, Outside, Reason For Stop - Furtive Movements] => [Suspect Frisked] (Conf: 84.080480%, Supp: 5.923494%)
+[Officer In Uniform, Outside, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 84.053156%, Supp: 6.763402%)
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked] => [Outside] (Conf: 84.037524%, Supp: 7.073005%)
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Reason For Stop - Furtive Movements] => [Outside] (Conf: 84.018874%, Supp: 5.092290%)
+[Reason For Frisk - Refuse To Comply W Officer'S Directions] => [Outside] (Conf: 83.920640%, Supp: 7.047516%)
+[Reason For Frisk - Refuse To Comply W Officer'S Directions, Suspect Frisked] => [Outside] (Conf: 83.879553%, Supp: 6.857900%)
+[Additional Circumstances - Ongoing Investigation] => [Outside] (Conf: 83.866684%, Supp: 8.244276%)
+[Radio Run] => [Officer In Uniform] (Conf: 83.850728%, Supp: 14.290244%)
+[Additional Circumstances - Area Has High Crime Incidence, Physical Force Used By Officer - Hands] => [Outside] (Conf: 83.785984%, Supp: 7.038812%)
+[Additional Circumstances - Proximity To Scene Of Offense, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 83.657492%, Supp: 8.503522%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Suspect Acting As A Lookout] => [Outside] (Conf: 83.345640%, Supp: 6.315783%)
+[Additional Circumstances - Area Has High Crime Incidence, CPW] => [Suspect Frisked] (Conf: 83.014190%, Supp: 6.037264%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Reason For Stop - Furtive Movements, Suspect Frisked] => [Reason For Frisk - Furtive Movements] (Conf: 82.988824%, Supp: 5.216629%)
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Time Of Day Fits Crime Incidence] => [Outside] (Conf: 82.969035%, Supp: 5.097264%)
+[Additional Circumstances - Proximity To Scene Of Offense] => [Outside] (Conf: 82.910040%, Supp: 19.544174%)
+[Reason For Stop - Suspect Acting As A Lookout] => [Outside] (Conf: 82.884329%, Supp: 8.989686%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Reason For Stop - Fits A Relevant Description] => [Outside] (Conf: 82.863719%, Supp: 6.490479%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked] => [Outside] (Conf: 82.715075%, Supp: 5.212277%)
+[Additional Circumstances - Area Has High Crime Incidence, CPW, Outside] => [Suspect Frisked] (Conf: 82.678555%, Supp: 5.534314%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 82.674276%, Supp: 5.043177%)
+[Reason For Stop - Suspicious Bulge] => [Suspect Frisked] (Conf: 82.616525%, Supp: 7.416180%)
+[Outside, Reason For Stop - Suspicious Bulge] => [Suspect Frisked] (Conf: 82.465038%, Supp: 6.672013%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Proximity To Scene Of Offense] => [Outside] (Conf: 82.434847%, Supp: 8.318257%)
+[Officer In Uniform, Reason For Frisk - Furtive Movements, Suspect Frisked] => [Outside] (Conf: 82.387668%, Supp: 7.808469%)
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 82.356765%, Supp: 5.513798%)
+[Radio Run, Reason For Stop - Fits A Relevant Description] => [Officer In Uniform] (Conf: 82.277121%, Supp: 6.667040%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Suspect Frisked] => [Outside] (Conf: 82.260827%, Supp: 8.360532%)
+[Officer In Uniform, Reason For Frisk - Furtive Movements] => [Outside] (Conf: 82.235175%, Supp: 8.069580%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 82.160933%, Supp: 6.963587%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 82.148923%, Supp: 5.713362%)
+[Additional Circumstances - Area Has High Crime Incidence, Radio Run] => [Officer In Uniform] (Conf: 82.130129%, Supp: 5.014579%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 82.058241%, Supp: 6.954884%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Other Persons Stopped, Questioned Or Frisked, Outside] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 82.046246%, Supp: 5.713362%)
+[Additional Circumstances - Area Has High Crime Incidence, Outside, Reason For Stop - Furtive Movements, Suspect Frisked] => [Reason For Frisk - Furtive Movements] (Conf: 82.024793%, Supp: 5.676682%)
+[Additional Circumstances - Area Has High Crime Incidence, Reason For Stop - Furtive Movements, Suspect Frisked] => [Reason For Frisk - Furtive Movements] (Conf: 81.996225%, Supp: 6.481153%)
+[Reason For Frisk - Other Suspicion Of Weapons, Suspect Frisked] => [Outside] (Conf: 81.963065%, Supp: 11.478325%)
+[Officer In Uniform, Other Persons Stopped, Questioned Or Frisked, Suspect Frisked] => [Outside] (Conf: 81.944838%, Supp: 8.995281%)
+[Additional Circumstances - Area Has High Crime Incidence, Additional Circumstances - Time Of Day Fits Crime Incidence] => [Outside] (Conf: 81.822781%, Supp: 15.081038%)
+[Officer In Uniform, Physical Force Used By Officer - Hands, Suspect Frisked] => [Outside] (Conf: 81.764339%, Supp: 8.153509%)
+[Additional Circumstances - Proximity To Scene Of Offense, Radio Run] => [Officer In Uniform] (Conf: 81.681442%, Supp: 5.097886%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 81.591133%, Supp: 6.681960%)
+[Additional Circumstances - Change Direction At Sight Of Officer, Officer In Uniform] => [Outside] (Conf: 81.572967%, Supp: 8.479276%)
+[Radio Run, Suspect Frisked] => [Outside] (Conf: 81.537406%, Supp: 6.647145%)
+[Additional Circumstances - Proximity To Scene Of Offense, Additional Circumstances - Time Of Day Fits Crime Incidence] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 81.532079%, Supp: 5.008983%)
+[Officer In Uniform, Reason For Frisk - Other Suspicion Of Weapons] => [Suspect Frisked] (Conf: 81.528168%, Supp: 8.484249%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence] => [Outside] (Conf: 81.514731%, Supp: 18.628420%)
+[Additional Circumstances - Proximity To Scene Of Offense, Radio Run] => [Outside] (Conf: 81.442375%, Supp: 5.082965%)
+[Other Persons Stopped, Questioned Or Frisked, Reason For Frisk - Other Suspicion Of Weapons] => [Outside] (Conf: 81.441125%, Supp: 5.761854%)
+[Officer In Uniform, Suspect Frisked] => [Outside] (Conf: 81.404831%, Supp: 21.348329%)
+[Outside, Radio Run, Reason For Stop - Fits A Relevant Description] => [Officer In Uniform] (Conf: 81.402686%, Supp: 5.613891%)
+[Officer In Uniform, Physical Force Used By Officer - Hands] => [Outside] (Conf: 81.284161%, Supp: 9.153191%)
+[Outside, Radio Run] => [Officer In Uniform] (Conf: 81.211813%, Supp: 9.916009%)
+[Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 81.146360%, Supp: 30.118557%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 80.957149%, Supp: 15.081038%)
+[CPW] => [Suspect Frisked] (Conf: 80.919425%, Supp: 14.029133%)
+[Officer In Uniform, Reason For Stop - Casing A Victim Or Location] => [Outside] (Conf: 80.901254%, Supp: 6.417741%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Outside, Suspect Frisked] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 80.832773%, Supp: 6.722370%)
+[Additional Circumstances - Report By Victim/Witness/Officer] => [Outside] (Conf: 80.819159%, Supp: 13.972558%)
+[CPW, Outside] => [Suspect Frisked] (Conf: 80.729967%, Supp: 12.733524%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence, Suspect Frisked] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 80.715527%, Supp: 7.798522%)
+[CPW, Reason For Stop - Furtive Movements, Suspect Frisked] => [Reason For Frisk - Furtive Movements] (Conf: 80.681708%, Supp: 5.179949%)
+[Officer In Uniform, Reason For Stop - Furtive Movements] => [Outside] (Conf: 80.676541%, Supp: 10.260427%)
+[Additional Circumstances - Proximity To Scene Of Offense, Officer In Uniform] => [Outside] (Conf: 80.659255%, Supp: 12.854754%)
+[Additional Circumstances - Time Of Day Fits Crime Incidence] => [Additional Circumstances - Area Has High Crime Incidence] (Conf: 80.652357%, Supp: 18.431343%)
+[CPW, Officer In Uniform] => [Suspect Frisked] (Conf: 80.437472%, Supp: 7.681643%)
+[Other Persons Stopped, Questioned Or Frisked, Radio Run] => [Officer In Uniform] (Conf: 80.407344%, Supp: 6.970426%)
+[Outside, Reason For Frisk - Other Suspicion Of Weapons, Reason For Stop - Other] => [Suspect Frisked] (Conf: 80.358186%, Supp: 5.132700%)
+[Additional Circumstances - Report By Victim/Witness/Officer, Officer In Uniform, Suspect Frisked] => [Outside] (Conf: 80.355853%, Supp: 5.531206%)
+[Additional Circumstances - Area Has High Crime Incidence, Inside, Reason For Stop - Other] => [Officer In Uniform] (Conf: 80.283224%, Supp: 5.040068%)
+[Officer In Uniform, Radio Run, Suspect Frisked] => [Outside] (Conf: 80.265927%, Supp: 5.216629%)
+[Reason For Frisk - Other Suspicion Of Weapons] => [Outside] (Conf: 80.226206%, Supp: 12.964794%)
+[Additional Circumstances - Area Has High Crime Incidence, Other Persons Stopped, Questioned Or Frisked] => [Outside] (Conf: 80.073774%, Supp: 13.765535%)
+[CPW, Officer In Uniform, Outside] => [Suspect Frisked] (Conf: 80.066298%, Supp: 6.757185%)
